@@ -1,0 +1,12 @@
+
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+
+int EVP_DigestVerifyInit(EVP_MD_CTX *ctx,EVP_PKEY_CTX **pctx,EVP_MD *type,ENGINE *e,EVP_PKEY *pkey)
+
+{
+  int iVar1;
+  
+  iVar1 = (*(code *)PTR_EVP_DigestVerifyInit_00420060)((int)ctx);
+  return iVar1;
+}
+

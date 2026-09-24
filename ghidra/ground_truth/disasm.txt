@@ -1,0 +1,1892 @@
+
+teled.unstripped:     file format elf64-littleaarch64
+
+
+Disassembly of section .init:
+
+0000000000400d00 <_init>:
+  400d00:	d503233f 	paciasp
+  400d04:	a9bf7bfd 	stp	x29, x30, [sp, #-16]!
+  400d08:	910003fd 	mov	x29, sp
+  400d0c:	940000cf 	bl	401048 <call_weak_fn>
+  400d10:	a8c17bfd 	ldp	x29, x30, [sp], #16
+  400d14:	d50323bf 	autiasp
+  400d18:	d65f03c0 	ret
+
+Disassembly of section .plt:
+
+0000000000400d20 <.plt>:
+  400d20:	a9bf7bf0 	stp	x16, x30, [sp, #-16]!
+  400d24:	f00000f0 	adrp	x16, 41f000 <__abi_tag+0x1bef4>
+  400d28:	f947fe11 	ldr	x17, [x16, #4088]
+  400d2c:	913fe210 	add	x16, x16, #0xff8
+  400d30:	d61f0220 	br	x17
+  400d34:	d503201f 	nop
+  400d38:	d503201f 	nop
+  400d3c:	d503201f 	nop
+
+0000000000400d40 <EVP_DigestSign@plt>:
+  400d40:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400d44:	f9400211 	ldr	x17, [x16]
+  400d48:	91000210 	add	x16, x16, #0x0
+  400d4c:	d61f0220 	br	x17
+
+0000000000400d50 <memcpy@plt>:
+  400d50:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400d54:	f9400611 	ldr	x17, [x16, #8]
+  400d58:	91002210 	add	x16, x16, #0x8
+  400d5c:	d61f0220 	br	x17
+
+0000000000400d60 <EVP_EncryptUpdate@plt>:
+  400d60:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400d64:	f9400a11 	ldr	x17, [x16, #16]
+  400d68:	91004210 	add	x16, x16, #0x10
+  400d6c:	d61f0220 	br	x17
+
+0000000000400d70 <EVP_DecryptInit_ex@plt>:
+  400d70:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400d74:	f9400e11 	ldr	x17, [x16, #24]
+  400d78:	91006210 	add	x16, x16, #0x18
+  400d7c:	d61f0220 	br	x17
+
+0000000000400d80 <EVP_PKEY_derive_set_peer@plt>:
+  400d80:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400d84:	f9401211 	ldr	x17, [x16, #32]
+  400d88:	91008210 	add	x16, x16, #0x20
+  400d8c:	d61f0220 	br	x17
+
+0000000000400d90 <EVP_DigestVerify@plt>:
+  400d90:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400d94:	f9401611 	ldr	x17, [x16, #40]
+  400d98:	9100a210 	add	x16, x16, #0x28
+  400d9c:	d61f0220 	br	x17
+
+0000000000400da0 <strlen@plt>:
+  400da0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400da4:	f9401a11 	ldr	x17, [x16, #48]
+  400da8:	9100c210 	add	x16, x16, #0x30
+  400dac:	d61f0220 	br	x17
+
+0000000000400db0 <EVP_DecryptFinal_ex@plt>:
+  400db0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400db4:	f9401e11 	ldr	x17, [x16, #56]
+  400db8:	9100e210 	add	x16, x16, #0x38
+  400dbc:	d61f0220 	br	x17
+
+0000000000400dc0 <memcmp@plt>:
+  400dc0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400dc4:	f9402211 	ldr	x17, [x16, #64]
+  400dc8:	91010210 	add	x16, x16, #0x40
+  400dcc:	d61f0220 	br	x17
+
+0000000000400dd0 <EVP_DigestSignInit@plt>:
+  400dd0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400dd4:	f9402611 	ldr	x17, [x16, #72]
+  400dd8:	91012210 	add	x16, x16, #0x48
+  400ddc:	d61f0220 	br	x17
+
+0000000000400de0 <EVP_PKEY_CTX_new@plt>:
+  400de0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400de4:	f9402a11 	ldr	x17, [x16, #80]
+  400de8:	91014210 	add	x16, x16, #0x50
+  400dec:	d61f0220 	br	x17
+
+0000000000400df0 <EVP_EncryptInit_ex@plt>:
+  400df0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400df4:	f9402e11 	ldr	x17, [x16, #88]
+  400df8:	91016210 	add	x16, x16, #0x58
+  400dfc:	d61f0220 	br	x17
+
+0000000000400e00 <EVP_DigestVerifyInit@plt>:
+  400e00:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400e04:	f9403211 	ldr	x17, [x16, #96]
+  400e08:	91018210 	add	x16, x16, #0x60
+  400e0c:	d61f0220 	br	x17
+
+0000000000400e10 <EVP_DecryptUpdate@plt>:
+  400e10:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400e14:	f9403611 	ldr	x17, [x16, #104]
+  400e18:	9101a210 	add	x16, x16, #0x68
+  400e1c:	d61f0220 	br	x17
+
+0000000000400e20 <EVP_PKEY_free@plt>:
+  400e20:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400e24:	f9403a11 	ldr	x17, [x16, #112]
+  400e28:	9101c210 	add	x16, x16, #0x70
+  400e2c:	d61f0220 	br	x17
+
+0000000000400e30 <EVP_CIPHER_CTX_new@plt>:
+  400e30:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400e34:	f9403e11 	ldr	x17, [x16, #120]
+  400e38:	9101e210 	add	x16, x16, #0x78
+  400e3c:	d61f0220 	br	x17
+
+0000000000400e40 <EVP_PKEY_new_raw_public_key@plt>:
+  400e40:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400e44:	f9404211 	ldr	x17, [x16, #128]
+  400e48:	91020210 	add	x16, x16, #0x80
+  400e4c:	d61f0220 	br	x17
+
+0000000000400e50 <__libc_start_main@plt>:
+  400e50:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400e54:	f9404611 	ldr	x17, [x16, #136]
+  400e58:	91022210 	add	x16, x16, #0x88
+  400e5c:	d61f0220 	br	x17
+
+0000000000400e60 <EVP_PKEY_new_raw_private_key@plt>:
+  400e60:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400e64:	f9404a11 	ldr	x17, [x16, #144]
+  400e68:	91024210 	add	x16, x16, #0x90
+  400e6c:	d61f0220 	br	x17
+
+0000000000400e70 <EVP_PKEY_derive@plt>:
+  400e70:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400e74:	f9404e11 	ldr	x17, [x16, #152]
+  400e78:	91026210 	add	x16, x16, #0x98
+  400e7c:	d61f0220 	br	x17
+
+0000000000400e80 <HMAC@plt>:
+  400e80:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400e84:	f9405211 	ldr	x17, [x16, #160]
+  400e88:	91028210 	add	x16, x16, #0xa0
+  400e8c:	d61f0220 	br	x17
+
+0000000000400e90 <EVP_CIPHER_CTX_free@plt>:
+  400e90:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400e94:	f9405611 	ldr	x17, [x16, #168]
+  400e98:	9102a210 	add	x16, x16, #0xa8
+  400e9c:	d61f0220 	br	x17
+
+0000000000400ea0 <EVP_MD_CTX_new@plt>:
+  400ea0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400ea4:	f9405a11 	ldr	x17, [x16, #176]
+  400ea8:	9102c210 	add	x16, x16, #0xb0
+  400eac:	d61f0220 	br	x17
+
+0000000000400eb0 <snprintf@plt>:
+  400eb0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400eb4:	f9405e11 	ldr	x17, [x16, #184]
+  400eb8:	9102e210 	add	x16, x16, #0xb8
+  400ebc:	d61f0220 	br	x17
+
+0000000000400ec0 <EVP_chacha20_poly1305@plt>:
+  400ec0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400ec4:	f9406211 	ldr	x17, [x16, #192]
+  400ec8:	91030210 	add	x16, x16, #0xc0
+  400ecc:	d61f0220 	br	x17
+
+0000000000400ed0 <EVP_CIPHER_CTX_ctrl@plt>:
+  400ed0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400ed4:	f9406611 	ldr	x17, [x16, #200]
+  400ed8:	91032210 	add	x16, x16, #0xc8
+  400edc:	d61f0220 	br	x17
+
+0000000000400ee0 <EVP_aes_256_gcm@plt>:
+  400ee0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400ee4:	f9406a11 	ldr	x17, [x16, #208]
+  400ee8:	91034210 	add	x16, x16, #0xd0
+  400eec:	d61f0220 	br	x17
+
+0000000000400ef0 <EVP_PKEY_get_raw_public_key@plt>:
+  400ef0:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400ef4:	f9406e11 	ldr	x17, [x16, #216]
+  400ef8:	91036210 	add	x16, x16, #0xd8
+  400efc:	d61f0220 	br	x17
+
+0000000000400f00 <EVP_EncryptFinal_ex@plt>:
+  400f00:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400f04:	f9407211 	ldr	x17, [x16, #224]
+  400f08:	91038210 	add	x16, x16, #0xe0
+  400f0c:	d61f0220 	br	x17
+
+0000000000400f10 <abort@plt>:
+  400f10:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400f14:	f9407611 	ldr	x17, [x16, #232]
+  400f18:	9103a210 	add	x16, x16, #0xe8
+  400f1c:	d61f0220 	br	x17
+
+0000000000400f20 <EVP_PKEY_CTX_free@plt>:
+  400f20:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400f24:	f9407a11 	ldr	x17, [x16, #240]
+  400f28:	9103c210 	add	x16, x16, #0xf0
+  400f2c:	d61f0220 	br	x17
+
+0000000000400f30 <EVP_sha256@plt>:
+  400f30:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400f34:	f9407e11 	ldr	x17, [x16, #248]
+  400f38:	9103e210 	add	x16, x16, #0xf8
+  400f3c:	d61f0220 	br	x17
+
+0000000000400f40 <EVP_MD_CTX_free@plt>:
+  400f40:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400f44:	f9408211 	ldr	x17, [x16, #256]
+  400f48:	91040210 	add	x16, x16, #0x100
+  400f4c:	d61f0220 	br	x17
+
+0000000000400f50 <__gmon_start__@plt>:
+  400f50:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400f54:	f9408611 	ldr	x17, [x16, #264]
+  400f58:	91042210 	add	x16, x16, #0x108
+  400f5c:	d61f0220 	br	x17
+
+0000000000400f60 <EVP_PKEY_derive_init@plt>:
+  400f60:	90000110 	adrp	x16, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  400f64:	f9408a11 	ldr	x17, [x16, #272]
+  400f68:	91044210 	add	x16, x16, #0x110
+  400f6c:	d61f0220 	br	x17
+
+Disassembly of section .text:
+
+0000000000400f80 <main>:
+  400f80:	a9b97bfd 	stp	x29, x30, [sp, #-112]!
+  400f84:	52800000 	mov	w0, #0x0                   	// #0
+  400f88:	910003fd 	mov	x29, sp
+  400f8c:	a90153f3 	stp	x19, x20, [sp, #16]
+  400f90:	910083f4 	add	x20, sp, #0x20
+  400f94:	910103f3 	add	x19, sp, #0x40
+  400f98:	a9027fff 	stp	xzr, xzr, [sp, #32]
+  400f9c:	a9037fff 	stp	xzr, xzr, [sp, #48]
+  400fa0:	a9047fff 	stp	xzr, xzr, [sp, #64]
+  400fa4:	a9057fff 	stp	xzr, xzr, [sp, #80]
+  400fa8:	a9067fff 	stp	xzr, xzr, [sp, #96]
+  400fac:	94000105 	bl	4013c0 <aead_init>
+  400fb0:	aa1403e1 	mov	x1, x20
+  400fb4:	d0000000 	adrp	x0, 402000 <identity_pubkey+0x20>
+  400fb8:	91204000 	add	x0, x0, #0x810
+  400fbc:	940005c1 	bl	4026c0 <teled_init>
+  400fc0:	aa1303e0 	mov	x0, x19
+  400fc4:	940005d9 	bl	402728 <teled_beacon>
+  400fc8:	12001c00 	and	w0, w0, #0xff
+  400fcc:	a94153f3 	ldp	x19, x20, [sp, #16]
+  400fd0:	52000000 	eor	w0, w0, #0x1
+  400fd4:	a8c77bfd 	ldp	x29, x30, [sp], #112
+  400fd8:	d65f03c0 	ret
+  400fdc:	d503201f 	nop
+  400fe0:	d503201f 	nop
+  400fe4:	d503201f 	nop
+  400fe8:	d503201f 	nop
+  400fec:	d503201f 	nop
+  400ff0:	d503201f 	nop
+  400ff4:	d503201f 	nop
+  400ff8:	d503201f 	nop
+  400ffc:	d503201f 	nop
+
+0000000000401000 <_start>:
+  401000:	d503245f 	bti	c
+  401004:	d280001d 	mov	x29, #0x0                   	// #0
+  401008:	d280001e 	mov	x30, #0x0                   	// #0
+  40100c:	aa0003e5 	mov	x5, x0
+  401010:	f94003e1 	ldr	x1, [sp]
+  401014:	910023e2 	add	x2, sp, #0x8
+  401018:	910003e6 	mov	x6, sp
+  40101c:	90000000 	adrp	x0, 401000 <_start>
+  401020:	9100d000 	add	x0, x0, #0x34
+  401024:	d2800003 	mov	x3, #0x0                   	// #0
+  401028:	d2800004 	mov	x4, #0x0                   	// #0
+  40102c:	97ffff89 	bl	400e50 <__libc_start_main@plt>
+  401030:	97ffffb8 	bl	400f10 <abort@plt>
+
+0000000000401034 <__wrap_main>:
+  401034:	d503245f 	bti	c
+  401038:	17ffffd2 	b	400f80 <main>
+  40103c:	d503201f 	nop
+
+0000000000401040 <_dl_relocate_static_pie>:
+  401040:	d503245f 	bti	c
+  401044:	d65f03c0 	ret
+
+0000000000401048 <call_weak_fn>:
+  401048:	d00000e0 	adrp	x0, 41f000 <__abi_tag+0x1bef4>
+  40104c:	f947ec00 	ldr	x0, [x0, #4056]
+  401050:	b4000040 	cbz	x0, 401058 <call_weak_fn+0x10>
+  401054:	17ffffbf 	b	400f50 <__gmon_start__@plt>
+  401058:	d65f03c0 	ret
+  40105c:	d503201f 	nop
+
+0000000000401060 <deregister_tm_clones>:
+  401060:	f00000e0 	adrp	x0, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  401064:	9104a000 	add	x0, x0, #0x128
+  401068:	f00000e1 	adrp	x1, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  40106c:	9104a021 	add	x1, x1, #0x128
+  401070:	eb00003f 	cmp	x1, x0
+  401074:	540000c0 	b.eq	40108c <deregister_tm_clones+0x2c>  // b.none
+  401078:	d00000e1 	adrp	x1, 41f000 <__abi_tag+0x1bef4>
+  40107c:	f947e821 	ldr	x1, [x1, #4048]
+  401080:	b4000061 	cbz	x1, 40108c <deregister_tm_clones+0x2c>
+  401084:	aa0103f0 	mov	x16, x1
+  401088:	d61f0200 	br	x16
+  40108c:	d65f03c0 	ret
+
+0000000000401090 <register_tm_clones>:
+  401090:	f00000e0 	adrp	x0, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  401094:	9104a000 	add	x0, x0, #0x128
+  401098:	f00000e1 	adrp	x1, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  40109c:	9104a021 	add	x1, x1, #0x128
+  4010a0:	cb000021 	sub	x1, x1, x0
+  4010a4:	d37ffc22 	lsr	x2, x1, #63
+  4010a8:	8b810c41 	add	x1, x2, x1, asr #3
+  4010ac:	9341fc21 	asr	x1, x1, #1
+  4010b0:	b40000c1 	cbz	x1, 4010c8 <register_tm_clones+0x38>
+  4010b4:	d00000e2 	adrp	x2, 41f000 <__abi_tag+0x1bef4>
+  4010b8:	f947f042 	ldr	x2, [x2, #4064]
+  4010bc:	b4000062 	cbz	x2, 4010c8 <register_tm_clones+0x38>
+  4010c0:	aa0203f0 	mov	x16, x2
+  4010c4:	d61f0200 	br	x16
+  4010c8:	d65f03c0 	ret
+
+00000000004010cc <__do_global_dtors_aux>:
+  4010cc:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+  4010d0:	910003fd 	mov	x29, sp
+  4010d4:	f9000bf3 	str	x19, [sp, #16]
+  4010d8:	f00000f3 	adrp	x19, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  4010dc:	3944c260 	ldrb	w0, [x19, #304]
+  4010e0:	37000080 	tbnz	w0, #0, 4010f0 <__do_global_dtors_aux+0x24>
+  4010e4:	97ffffdf 	bl	401060 <deregister_tm_clones>
+  4010e8:	52800020 	mov	w0, #0x1                   	// #1
+  4010ec:	3904c260 	strb	w0, [x19, #304]
+  4010f0:	f9400bf3 	ldr	x19, [sp, #16]
+  4010f4:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  4010f8:	d65f03c0 	ret
+  4010fc:	d503201f 	nop
+
+0000000000401100 <frame_dummy>:
+  401100:	17ffffe4 	b	401090 <register_tm_clones>
+  401104:	d503201f 	nop
+  401108:	d503201f 	nop
+  40110c:	d503201f 	nop
+  401110:	d503201f 	nop
+  401114:	d503201f 	nop
+  401118:	d503201f 	nop
+  40111c:	d503201f 	nop
+
+0000000000401120 <quarter_round>:
+  401120:	b9400004 	ldr	w4, [x0]
+  401124:	b9400025 	ldr	w5, [x1]
+  401128:	0b050084 	add	w4, w4, w5
+  40112c:	b9000004 	str	w4, [x0]
+  401130:	b9400065 	ldr	w5, [x3]
+  401134:	4a050084 	eor	w4, w4, w5
+  401138:	13844084 	ror	w4, w4, #16
+  40113c:	b9000064 	str	w4, [x3]
+  401140:	b9400045 	ldr	w5, [x2]
+  401144:	0b050084 	add	w4, w4, w5
+  401148:	b9000044 	str	w4, [x2]
+  40114c:	b9400025 	ldr	w5, [x1]
+  401150:	4a050084 	eor	w4, w4, w5
+  401154:	13845084 	ror	w4, w4, #20
+  401158:	b9000024 	str	w4, [x1]
+  40115c:	b9400005 	ldr	w5, [x0]
+  401160:	0b050084 	add	w4, w4, w5
+  401164:	b9000004 	str	w4, [x0]
+  401168:	b9400060 	ldr	w0, [x3]
+  40116c:	4a000080 	eor	w0, w4, w0
+  401170:	13806000 	ror	w0, w0, #24
+  401174:	b9000060 	str	w0, [x3]
+  401178:	b9400043 	ldr	w3, [x2]
+  40117c:	0b030000 	add	w0, w0, w3
+  401180:	b9000040 	str	w0, [x2]
+  401184:	b9400022 	ldr	w2, [x1]
+  401188:	4a020000 	eor	w0, w0, w2
+  40118c:	13806400 	ror	w0, w0, #25
+  401190:	b9000020 	str	w0, [x1]
+  401194:	d65f03c0 	ret
+  401198:	d503201f 	nop
+  40119c:	d503201f 	nop
+
+00000000004011a0 <hchacha_rounds>:
+  4011a0:	a9bc7bfd 	stp	x29, x30, [sp, #-64]!
+  4011a4:	aa0003e7 	mov	x7, x0
+  4011a8:	9100d012 	add	x18, x0, #0x34
+  4011ac:	910003fd 	mov	x29, sp
+  4011b0:	9100200f 	add	x15, x0, #0x8
+  4011b4:	9100600e 	add	x14, x0, #0x18
+  4011b8:	9100a00d 	add	x13, x0, #0x28
+  4011bc:	9100e00c 	add	x12, x0, #0x38
+  4011c0:	9100300b 	add	x11, x0, #0xc
+  4011c4:	9100700a 	add	x10, x0, #0x1c
+  4011c8:	9100b009 	add	x9, x0, #0x2c
+  4011cc:	9100f008 	add	x8, x0, #0x3c
+  4011d0:	a90153f3 	stp	x19, x20, [sp, #16]
+  4011d4:	91005014 	add	x20, x0, #0x14
+  4011d8:	91009013 	add	x19, x0, #0x24
+  4011dc:	a9025bf5 	stp	x21, x22, [sp, #32]
+  4011e0:	9100c016 	add	x22, x0, #0x30
+  4011e4:	91001015 	add	x21, x0, #0x4
+  4011e8:	a90363f7 	stp	x23, x24, [sp, #48]
+  4011ec:	91004018 	add	x24, x0, #0x10
+  4011f0:	91008017 	add	x23, x0, #0x20
+  4011f4:	52800146 	mov	w6, #0xa                   	// #10
+  4011f8:	d503201f 	nop
+  4011fc:	d503201f 	nop
+  401200:	aa1803e1 	mov	x1, x24
+  401204:	aa1603e3 	mov	x3, x22
+  401208:	aa1703e2 	mov	x2, x23
+  40120c:	aa0703e0 	mov	x0, x7
+  401210:	97ffffc4 	bl	401120 <quarter_round>
+  401214:	aa1403e1 	mov	x1, x20
+  401218:	aa1203e3 	mov	x3, x18
+  40121c:	aa1303e2 	mov	x2, x19
+  401220:	aa1503e0 	mov	x0, x21
+  401224:	97ffffbf 	bl	401120 <quarter_round>
+  401228:	aa0e03e1 	mov	x1, x14
+  40122c:	aa0c03e3 	mov	x3, x12
+  401230:	aa0d03e2 	mov	x2, x13
+  401234:	aa0f03e0 	mov	x0, x15
+  401238:	97ffffba 	bl	401120 <quarter_round>
+  40123c:	aa0a03e1 	mov	x1, x10
+  401240:	aa0803e3 	mov	x3, x8
+  401244:	aa0903e2 	mov	x2, x9
+  401248:	aa0b03e0 	mov	x0, x11
+  40124c:	97ffffb5 	bl	401120 <quarter_round>
+  401250:	aa1403e1 	mov	x1, x20
+  401254:	aa0803e3 	mov	x3, x8
+  401258:	aa0d03e2 	mov	x2, x13
+  40125c:	aa0703e0 	mov	x0, x7
+  401260:	97ffffb0 	bl	401120 <quarter_round>
+  401264:	aa0e03e1 	mov	x1, x14
+  401268:	aa1603e3 	mov	x3, x22
+  40126c:	aa0903e2 	mov	x2, x9
+  401270:	aa1503e0 	mov	x0, x21
+  401274:	97ffffab 	bl	401120 <quarter_round>
+  401278:	aa0a03e1 	mov	x1, x10
+  40127c:	aa1203e3 	mov	x3, x18
+  401280:	aa1703e2 	mov	x2, x23
+  401284:	aa0f03e0 	mov	x0, x15
+  401288:	97ffffa6 	bl	401120 <quarter_round>
+  40128c:	aa1803e1 	mov	x1, x24
+  401290:	aa0c03e3 	mov	x3, x12
+  401294:	aa1303e2 	mov	x2, x19
+  401298:	aa0b03e0 	mov	x0, x11
+  40129c:	97ffffa1 	bl	401120 <quarter_round>
+  4012a0:	510004c1 	sub	w1, w6, #0x1
+  4012a4:	72001c26 	ands	w6, w1, #0xff
+  4012a8:	54fffac1 	b.ne	401200 <hchacha_rounds+0x60>  // b.any
+  4012ac:	a94153f3 	ldp	x19, x20, [sp, #16]
+  4012b0:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  4012b4:	a94363f7 	ldp	x23, x24, [sp, #48]
+  4012b8:	a8c47bfd 	ldp	x29, x30, [sp], #64
+  4012bc:	d65f03c0 	ret
+
+00000000004012c0 <hchacha_state>:
+  4012c0:	b0000003 	adrp	x3, 402000 <identity_pubkey+0x20>
+  4012c4:	aa0003e5 	mov	x5, x0
+  4012c8:	3dc1f07f 	ldr	q31, [x3, #1984]
+  4012cc:	d2800003 	mov	x3, #0x0                   	// #0
+  4012d0:	3c8104bf 	str	q31, [x5], #16
+  4012d4:	d503201f 	nop
+  4012d8:	d503201f 	nop
+  4012dc:	d503201f 	nop
+  4012e0:	b8636824 	ldr	w4, [x1, x3]
+  4012e4:	b82368a4 	str	w4, [x5, x3]
+  4012e8:	91001063 	add	x3, x3, #0x4
+  4012ec:	f100807f 	cmp	x3, #0x20
+  4012f0:	54ffff81 	b.ne	4012e0 <hchacha_state+0x20>  // b.any
+  4012f4:	b9400041 	ldr	w1, [x2]
+  4012f8:	b9003001 	str	w1, [x0, #48]
+  4012fc:	b9400441 	ldr	w1, [x2, #4]
+  401300:	b9003401 	str	w1, [x0, #52]
+  401304:	b9400841 	ldr	w1, [x2, #8]
+  401308:	b9003801 	str	w1, [x0, #56]
+  40130c:	b9400c41 	ldr	w1, [x2, #12]
+  401310:	b9003c01 	str	w1, [x0, #60]
+  401314:	d65f03c0 	ret
+  401318:	d503201f 	nop
+  40131c:	d503201f 	nop
+
+0000000000401320 <chacha_dec_final>:
+  401320:	a9bc7bfd 	stp	x29, x30, [sp, #-64]!
+  401324:	aa0203e3 	mov	x3, x2
+  401328:	52800604 	mov	w4, #0x30                  	// #48
+  40132c:	910003fd 	mov	x29, sp
+  401330:	a90153f3 	stp	x19, x20, [sp, #16]
+  401334:	aa0203f3 	mov	x19, x2
+  401338:	aa0003f4 	mov	x20, x0
+  40133c:	9100f3e2 	add	x2, sp, #0x3c
+  401340:	a9025bf5 	stp	x21, x22, [sp, #32]
+  401344:	aa0103f5 	mov	x21, x1
+  401348:	b9003fff 	str	wzr, [sp, #60]
+  40134c:	97fffeb1 	bl	400e10 <EVP_DecryptUpdate@plt>
+  401350:	7100041f 	cmp	w0, #0x1
+  401354:	540000c0 	b.eq	40136c <chacha_dec_final+0x4c>  // b.none
+  401358:	a94153f3 	ldp	x19, x20, [sp, #16]
+  40135c:	52800000 	mov	w0, #0x0                   	// #0
+  401360:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  401364:	a8c47bfd 	ldp	x29, x30, [sp], #64
+  401368:	d65f03c0 	ret
+  40136c:	b9403ff6 	ldr	w22, [sp, #60]
+  401370:	9100c263 	add	x3, x19, #0x30
+  401374:	aa1403e0 	mov	x0, x20
+  401378:	52800202 	mov	w2, #0x10                  	// #16
+  40137c:	52800221 	mov	w1, #0x11                  	// #17
+  401380:	97fffed4 	bl	400ed0 <EVP_CIPHER_CTX_ctrl@plt>
+  401384:	7100041f 	cmp	w0, #0x1
+  401388:	54fffe81 	b.ne	401358 <chacha_dec_final+0x38>  // b.any
+  40138c:	9100f3e2 	add	x2, sp, #0x3c
+  401390:	8b36c2a1 	add	x1, x21, w22, sxtw
+  401394:	aa1403e0 	mov	x0, x20
+  401398:	97fffe86 	bl	400db0 <EVP_DecryptFinal_ex@plt>
+  40139c:	7100041f 	cmp	w0, #0x1
+  4013a0:	a94153f3 	ldp	x19, x20, [sp, #16]
+  4013a4:	1a9f17e0 	cset	w0, eq	// eq = none
+  4013a8:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  4013ac:	a8c47bfd 	ldp	x29, x30, [sp], #64
+  4013b0:	d65f03c0 	ret
+  4013b4:	d503201f 	nop
+  4013b8:	d503201f 	nop
+  4013bc:	d503201f 	nop
+
+00000000004013c0 <aead_init>:
+  4013c0:	2a0003e1 	mov	w1, w0
+  4013c4:	52800000 	mov	w0, #0x0                   	// #0
+  4013c8:	7100043f 	cmp	w1, #0x1
+  4013cc:	54000049 	b.ls	4013d4 <aead_init+0x14>  // b.plast
+  4013d0:	d65f03c0 	ret
+  4013d4:	f00000e3 	adrp	x3, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  4013d8:	91050062 	add	x2, x3, #0x140
+  4013dc:	52800024 	mov	w4, #0x1                   	// #1
+  4013e0:	52800020 	mov	w0, #0x1                   	// #1
+  4013e4:	b9014061 	str	w1, [x3, #320]
+  4013e8:	3900105f 	strb	wzr, [x2, #4]
+  4013ec:	a9017c5f 	stp	xzr, xzr, [x2, #16]
+  4013f0:	f900105f 	str	xzr, [x2, #32]
+  4013f4:	3900a044 	strb	w4, [x2, #40]
+  4013f8:	d65f03c0 	ret
+  4013fc:	d503201f 	nop
+
+0000000000401400 <aead_nonce_size>:
+  401400:	f00000e1 	adrp	x1, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  401404:	91050022 	add	x2, x1, #0x140
+  401408:	d2800000 	mov	x0, #0x0                   	// #0
+  40140c:	3940a042 	ldrb	w2, [x2, #40]
+  401410:	360000c2 	tbz	w2, #0, 401428 <aead_nonce_size+0x28>
+  401414:	b9414022 	ldr	w2, [x1, #320]
+  401418:	d2800180 	mov	x0, #0xc                   	// #12
+  40141c:	d2800301 	mov	x1, #0x18                  	// #24
+  401420:	7100005f 	cmp	w2, #0x0
+  401424:	9a810000 	csel	x0, x0, x1, eq	// eq = none
+  401428:	d65f03c0 	ret
+
+000000000040142c <aead_seal>:
+  40142c:	a9b57bfd 	stp	x29, x30, [sp, #-176]!
+  401430:	f00000e5 	adrp	x5, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  401434:	910500a4 	add	x4, x5, #0x140
+  401438:	910003fd 	mov	x29, sp
+  40143c:	a9025bf5 	stp	x21, x22, [sp, #32]
+  401440:	52800035 	mov	w21, #0x1                   	// #1
+  401444:	3940a086 	ldrb	w6, [x4, #40]
+  401448:	36000d66 	tbz	w6, #0, 4015f4 <aead_seal+0x1c8>
+  40144c:	a90153f3 	stp	x19, x20, [sp, #16]
+  401450:	f100001f 	cmp	x0, #0x0
+  401454:	aa0003f4 	mov	x20, x0
+  401458:	aa0103f3 	mov	x19, x1
+  40145c:	fa401824 	ccmp	x1, #0x0, #0x4, ne	// ne = any
+  401460:	52800035 	mov	w21, #0x1                   	// #1
+  401464:	54000d00 	b.eq	401604 <aead_seal+0x1d8>  // b.none
+  401468:	a90363f7 	stp	x23, x24, [sp, #48]
+  40146c:	f100005f 	cmp	x2, #0x0
+  401470:	aa0203f7 	mov	x23, x2
+  401474:	aa0303f6 	mov	x22, x3
+  401478:	fa401864 	ccmp	x3, #0x0, #0x4, ne	// ne = any
+  40147c:	54000ce0 	b.eq	401618 <aead_seal+0x1ec>  // b.none
+  401480:	b94140b5 	ldr	w21, [x5, #320]
+  401484:	34000d75 	cbz	w21, 401630 <aead_seal+0x204>
+  401488:	a9401c26 	ldp	x6, x7, [x1]
+  40148c:	aa1303e2 	mov	x2, x19
+  401490:	f9400a63 	ldr	x3, [x19, #16]
+  401494:	aa0003e1 	mov	x1, x0
+  401498:	52800025 	mov	w5, #0x1                   	// #1
+  40149c:	9101c3e0 	add	x0, sp, #0x70
+  4014a0:	39001085 	strb	w5, [x4, #4]
+  4014a4:	a9011c86 	stp	x6, x7, [x4, #16]
+  4014a8:	f9001083 	str	x3, [x4, #32]
+  4014ac:	97ffff85 	bl	4012c0 <hchacha_state>
+  4014b0:	97ffff3c 	bl	4011a0 <hchacha_rounds>
+  4014b4:	2d4e6ffe 	ldp	s30, s27, [sp, #112]
+  4014b8:	b90073ff 	str	wzr, [sp, #112]
+  4014bc:	2d5473ff 	ldp	s31, s28, [sp, #160]
+  4014c0:	2f2807d6 	ushr	v22.2s, v30.2s, #24
+  4014c4:	2f3807d8 	ushr	v24.2s, v30.2s, #8
+  4014c8:	2f3007da 	ushr	v26.2s, v30.2s, #16
+  4014cc:	2f2807f7 	ushr	v23.2s, v31.2s, #24
+  4014d0:	2f3807fd 	ushr	v29.2s, v31.2s, #8
+  4014d4:	2f3007f9 	ushr	v25.2s, v31.2s, #16
+  4014d8:	6e0306d8 	mov	v24.b[1], v22.b[0]
+  4014dc:	2f280776 	ushr	v22.2s, v27.2s, #24
+  4014e0:	6e03075e 	mov	v30.b[1], v26.b[0]
+  4014e4:	2f38077a 	ushr	v26.2s, v27.2s, #8
+  4014e8:	6e0306fd 	mov	v29.b[1], v23.b[0]
+  4014ec:	2f280797 	ushr	v23.2s, v28.2s, #24
+  4014f0:	6e03073f 	mov	v31.b[1], v25.b[0]
+  4014f4:	2f380799 	ushr	v25.2s, v28.2s, #8
+  4014f8:	f9400a60 	ldr	x0, [x19, #16]
+  4014fc:	6e050758 	mov	v24.b[2], v26.b[0]
+  401500:	6e05077e 	mov	v30.b[2], v27.b[0]
+  401504:	2f30077a 	ushr	v26.2s, v27.2s, #16
+  401508:	6e05073d 	mov	v29.b[2], v25.b[0]
+  40150c:	2f30079b 	ushr	v27.2s, v28.2s, #16
+  401510:	6e05079f 	mov	v31.b[2], v28.b[0]
+  401514:	bd40abfc 	ldr	s28, [sp, #168]
+  401518:	6e0706d8 	mov	v24.b[3], v22.b[0]
+  40151c:	6e07075e 	mov	v30.b[3], v26.b[0]
+  401520:	2d4f6bf9 	ldp	s25, s26, [sp, #120]
+  401524:	6e0706fd 	mov	v29.b[3], v23.b[0]
+  401528:	6e07077f 	mov	v31.b[3], v27.b[0]
+  40152c:	2f38079b 	ushr	v27.2s, v28.2s, #8
+  401530:	f80743e0 	stur	x0, [sp, #116]
+  401534:	2f380735 	ushr	v21.2s, v25.2s, #8
+  401538:	2f280736 	ushr	v22.2s, v25.2s, #24
+  40153c:	2f300737 	ushr	v23.2s, v25.2s, #16
+  401540:	6e09073e 	mov	v30.b[4], v25.b[0]
+  401544:	6e09077d 	mov	v29.b[4], v27.b[0]
+  401548:	2f280799 	ushr	v25.2s, v28.2s, #24
+  40154c:	6e09079f 	mov	v31.b[4], v28.b[0]
+  401550:	2f30079c 	ushr	v28.2s, v28.2s, #16
+  401554:	6e0906b8 	mov	v24.b[4], v21.b[0]
+  401558:	bd40affb 	ldr	s27, [sp, #172]
+  40155c:	2f380754 	ushr	v20.2s, v26.2s, #8
+  401560:	6e0b06fe 	mov	v30.b[5], v23.b[0]
+  401564:	6e0b073d 	mov	v29.b[5], v25.b[0]
+  401568:	2f280757 	ushr	v23.2s, v26.2s, #24
+  40156c:	6e0b079f 	mov	v31.b[5], v28.b[0]
+  401570:	2f380775 	ushr	v21.2s, v27.2s, #8
+  401574:	6e0b06d8 	mov	v24.b[5], v22.b[0]
+  401578:	2f280779 	ushr	v25.2s, v27.2s, #24
+  40157c:	2f300756 	ushr	v22.2s, v26.2s, #16
+  401580:	6e0d075e 	mov	v30.b[6], v26.b[0]
+  401584:	2f30077c 	ushr	v28.2s, v27.2s, #16
+  401588:	6e0d06bd 	mov	v29.b[6], v21.b[0]
+  40158c:	6e0d077f 	mov	v31.b[6], v27.b[0]
+  401590:	6e0d0698 	mov	v24.b[6], v20.b[0]
+  401594:	6e0f06de 	mov	v30.b[7], v22.b[0]
+  401598:	6e0f073d 	mov	v29.b[7], v25.b[0]
+  40159c:	6e0f079f 	mov	v31.b[7], v28.b[0]
+  4015a0:	6e0f06f8 	mov	v24.b[7], v23.b[0]
+  4015a4:	4e1d3bff 	zip1	v31.16b, v31.16b, v29.16b
+  4015a8:	4e183bde 	zip1	v30.16b, v30.16b, v24.16b
+  4015ac:	ad02fffe 	stp	q30, q31, [sp, #80]
+  4015b0:	97fffe20 	bl	400e30 <EVP_CIPHER_CTX_new@plt>
+  4015b4:	aa0003f3 	mov	x19, x0
+  4015b8:	b40010e0 	cbz	x0, 4017d4 <aead_seal+0x3a8>
+  4015bc:	97fffe41 	bl	400ec0 <EVP_chacha20_poly1305@plt>
+  4015c0:	aa0003e1 	mov	x1, x0
+  4015c4:	d2800004 	mov	x4, #0x0                   	// #0
+  4015c8:	aa1303e0 	mov	x0, x19
+  4015cc:	d2800003 	mov	x3, #0x0                   	// #0
+  4015d0:	d2800002 	mov	x2, #0x0                   	// #0
+  4015d4:	97fffe07 	bl	400df0 <EVP_EncryptInit_ex@plt>
+  4015d8:	7100041f 	cmp	w0, #0x1
+  4015dc:	540005a0 	b.eq	401690 <aead_seal+0x264>  // b.none
+  4015e0:	52800075 	mov	w21, #0x3                   	// #3
+  4015e4:	aa1303e0 	mov	x0, x19
+  4015e8:	97fffe2a 	bl	400e90 <EVP_CIPHER_CTX_free@plt>
+  4015ec:	a94153f3 	ldp	x19, x20, [sp, #16]
+  4015f0:	a94363f7 	ldp	x23, x24, [sp, #48]
+  4015f4:	2a1503e0 	mov	w0, w21
+  4015f8:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  4015fc:	a8cb7bfd 	ldp	x29, x30, [sp], #176
+  401600:	d65f03c0 	ret
+  401604:	a94153f3 	ldp	x19, x20, [sp, #16]
+  401608:	2a1503e0 	mov	w0, w21
+  40160c:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  401610:	a8cb7bfd 	ldp	x29, x30, [sp], #176
+  401614:	d65f03c0 	ret
+  401618:	a94153f3 	ldp	x19, x20, [sp, #16]
+  40161c:	2a1503e0 	mov	w0, w21
+  401620:	a94363f7 	ldp	x23, x24, [sp, #48]
+  401624:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  401628:	a8cb7bfd 	ldp	x29, x30, [sp], #176
+  40162c:	d65f03c0 	ret
+  401630:	b9400820 	ldr	w0, [x1, #8]
+  401634:	52800022 	mov	w2, #0x1                   	// #1
+  401638:	f9400021 	ldr	x1, [x1]
+  40163c:	39001082 	strb	w2, [x4, #4]
+  401640:	f9000881 	str	x1, [x4, #16]
+  401644:	b9001880 	str	w0, [x4, #24]
+  401648:	97fffdfa 	bl	400e30 <EVP_CIPHER_CTX_new@plt>
+  40164c:	aa0003f8 	mov	x24, x0
+  401650:	b4000c20 	cbz	x0, 4017d4 <aead_seal+0x3a8>
+  401654:	97fffe23 	bl	400ee0 <EVP_aes_256_gcm@plt>
+  401658:	aa0003e1 	mov	x1, x0
+  40165c:	d2800004 	mov	x4, #0x0                   	// #0
+  401660:	aa1803e0 	mov	x0, x24
+  401664:	d2800003 	mov	x3, #0x0                   	// #0
+  401668:	d2800002 	mov	x2, #0x0                   	// #0
+  40166c:	97fffde1 	bl	400df0 <EVP_EncryptInit_ex@plt>
+  401670:	7100041f 	cmp	w0, #0x1
+  401674:	54000600 	b.eq	401734 <aead_seal+0x308>  // b.none
+  401678:	52800075 	mov	w21, #0x3                   	// #3
+  40167c:	aa1803e0 	mov	x0, x24
+  401680:	97fffe04 	bl	400e90 <EVP_CIPHER_CTX_free@plt>
+  401684:	a94153f3 	ldp	x19, x20, [sp, #16]
+  401688:	a94363f7 	ldp	x23, x24, [sp, #48]
+  40168c:	17ffffda 	b	4015f4 <aead_seal+0x1c8>
+  401690:	aa1303e0 	mov	x0, x19
+  401694:	d2800003 	mov	x3, #0x0                   	// #0
+  401698:	52800182 	mov	w2, #0xc                   	// #12
+  40169c:	52800121 	mov	w1, #0x9                   	// #9
+  4016a0:	97fffe0c 	bl	400ed0 <EVP_CIPHER_CTX_ctrl@plt>
+  4016a4:	7100041f 	cmp	w0, #0x1
+  4016a8:	54fff9c1 	b.ne	4015e0 <aead_seal+0x1b4>  // b.any
+  4016ac:	9101c3e4 	add	x4, sp, #0x70
+  4016b0:	910143e3 	add	x3, sp, #0x50
+  4016b4:	aa1303e0 	mov	x0, x19
+  4016b8:	d2800002 	mov	x2, #0x0                   	// #0
+  4016bc:	d2800001 	mov	x1, #0x0                   	// #0
+  4016c0:	97fffdcc 	bl	400df0 <EVP_EncryptInit_ex@plt>
+  4016c4:	7100041f 	cmp	w0, #0x1
+  4016c8:	54fff8c1 	b.ne	4015e0 <aead_seal+0x1b4>  // b.any
+  4016cc:	aa1703e3 	mov	x3, x23
+  4016d0:	910133e2 	add	x2, sp, #0x4c
+  4016d4:	aa1603e1 	mov	x1, x22
+  4016d8:	aa1303e0 	mov	x0, x19
+  4016dc:	52800604 	mov	w4, #0x30                  	// #48
+  4016e0:	b9004fff 	str	wzr, [sp, #76]
+  4016e4:	97fffd9f 	bl	400d60 <EVP_EncryptUpdate@plt>
+  4016e8:	7100041f 	cmp	w0, #0x1
+  4016ec:	54fff7a1 	b.ne	4015e0 <aead_seal+0x1b4>  // b.any
+  4016f0:	9100c2d6 	add	x22, x22, #0x30
+  4016f4:	910133e2 	add	x2, sp, #0x4c
+  4016f8:	aa1603e1 	mov	x1, x22
+  4016fc:	aa1303e0 	mov	x0, x19
+  401700:	b9004fff 	str	wzr, [sp, #76]
+  401704:	97fffdff 	bl	400f00 <EVP_EncryptFinal_ex@plt>
+  401708:	7100041f 	cmp	w0, #0x1
+  40170c:	54fff6a1 	b.ne	4015e0 <aead_seal+0x1b4>  // b.any
+  401710:	52800202 	mov	w2, #0x10                  	// #16
+  401714:	aa1603e3 	mov	x3, x22
+  401718:	aa1303e0 	mov	x0, x19
+  40171c:	2a0203e1 	mov	w1, w2
+  401720:	97fffdec 	bl	400ed0 <EVP_CIPHER_CTX_ctrl@plt>
+  401724:	7100041f 	cmp	w0, #0x1
+  401728:	54fff5c1 	b.ne	4015e0 <aead_seal+0x1b4>  // b.any
+  40172c:	52800015 	mov	w21, #0x0                   	// #0
+  401730:	17ffffad 	b	4015e4 <aead_seal+0x1b8>
+  401734:	aa1803e0 	mov	x0, x24
+  401738:	d2800003 	mov	x3, #0x0                   	// #0
+  40173c:	52800182 	mov	w2, #0xc                   	// #12
+  401740:	52800121 	mov	w1, #0x9                   	// #9
+  401744:	97fffde3 	bl	400ed0 <EVP_CIPHER_CTX_ctrl@plt>
+  401748:	7100041f 	cmp	w0, #0x1
+  40174c:	54fff961 	b.ne	401678 <aead_seal+0x24c>  // b.any
+  401750:	aa1303e4 	mov	x4, x19
+  401754:	aa1403e3 	mov	x3, x20
+  401758:	aa1803e0 	mov	x0, x24
+  40175c:	d2800002 	mov	x2, #0x0                   	// #0
+  401760:	d2800001 	mov	x1, #0x0                   	// #0
+  401764:	97fffda3 	bl	400df0 <EVP_EncryptInit_ex@plt>
+  401768:	7100041f 	cmp	w0, #0x1
+  40176c:	54fff861 	b.ne	401678 <aead_seal+0x24c>  // b.any
+  401770:	aa1703e3 	mov	x3, x23
+  401774:	9101c3e2 	add	x2, sp, #0x70
+  401778:	aa1603e1 	mov	x1, x22
+  40177c:	aa1803e0 	mov	x0, x24
+  401780:	52800604 	mov	w4, #0x30                  	// #48
+  401784:	b90073ff 	str	wzr, [sp, #112]
+  401788:	97fffd76 	bl	400d60 <EVP_EncryptUpdate@plt>
+  40178c:	7100041f 	cmp	w0, #0x1
+  401790:	54fff741 	b.ne	401678 <aead_seal+0x24c>  // b.any
+  401794:	9100c2d6 	add	x22, x22, #0x30
+  401798:	9101c3e2 	add	x2, sp, #0x70
+  40179c:	aa1603e1 	mov	x1, x22
+  4017a0:	aa1803e0 	mov	x0, x24
+  4017a4:	b90073ff 	str	wzr, [sp, #112]
+  4017a8:	97fffdd6 	bl	400f00 <EVP_EncryptFinal_ex@plt>
+  4017ac:	7100041f 	cmp	w0, #0x1
+  4017b0:	54fff641 	b.ne	401678 <aead_seal+0x24c>  // b.any
+  4017b4:	52800202 	mov	w2, #0x10                  	// #16
+  4017b8:	aa1603e3 	mov	x3, x22
+  4017bc:	aa1803e0 	mov	x0, x24
+  4017c0:	2a0203e1 	mov	w1, w2
+  4017c4:	97fffdc3 	bl	400ed0 <EVP_CIPHER_CTX_ctrl@plt>
+  4017c8:	7100041f 	cmp	w0, #0x1
+  4017cc:	54fff580 	b.eq	40167c <aead_seal+0x250>  // b.none
+  4017d0:	17ffffaa 	b	401678 <aead_seal+0x24c>
+  4017d4:	a94153f3 	ldp	x19, x20, [sp, #16]
+  4017d8:	52800075 	mov	w21, #0x3                   	// #3
+  4017dc:	a94363f7 	ldp	x23, x24, [sp, #48]
+  4017e0:	17ffff85 	b	4015f4 <aead_seal+0x1c8>
+
+00000000004017e4 <aead_open>:
+  4017e4:	a9b67bfd 	stp	x29, x30, [sp, #-160]!
+  4017e8:	f00000e4 	adrp	x4, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  4017ec:	91050085 	add	x5, x4, #0x140
+  4017f0:	910003fd 	mov	x29, sp
+  4017f4:	a90363f7 	stp	x23, x24, [sp, #48]
+  4017f8:	52800037 	mov	w23, #0x1                   	// #1
+  4017fc:	3940a0a5 	ldrb	w5, [x5, #40]
+  401800:	36000d05 	tbz	w5, #0, 4019a0 <aead_open+0x1bc>
+  401804:	a90153f3 	stp	x19, x20, [sp, #16]
+  401808:	f100001f 	cmp	x0, #0x0
+  40180c:	aa0103f4 	mov	x20, x1
+  401810:	a9025bf5 	stp	x21, x22, [sp, #32]
+  401814:	fa401824 	ccmp	x1, #0x0, #0x4, ne	// ne = any
+  401818:	aa0003f5 	mov	x21, x0
+  40181c:	52800037 	mov	w23, #0x1                   	// #1
+  401820:	54000c80 	b.eq	4019b0 <aead_open+0x1cc>  // b.none
+  401824:	f100005f 	cmp	x2, #0x0
+  401828:	aa0203f6 	mov	x22, x2
+  40182c:	aa0303f3 	mov	x19, x3
+  401830:	fa401864 	ccmp	x3, #0x0, #0x4, ne	// ne = any
+  401834:	54000be0 	b.eq	4019b0 <aead_open+0x1cc>  // b.none
+  401838:	b9414097 	ldr	w23, [x4, #320]
+  40183c:	34000c77 	cbz	w23, 4019c8 <aead_open+0x1e4>
+  401840:	aa0003e1 	mov	x1, x0
+  401844:	aa1403e2 	mov	x2, x20
+  401848:	910183e0 	add	x0, sp, #0x60
+  40184c:	97fffe9d 	bl	4012c0 <hchacha_state>
+  401850:	97fffe54 	bl	4011a0 <hchacha_rounds>
+  401854:	2d4c6ffe 	ldp	s30, s27, [sp, #96]
+  401858:	b90063ff 	str	wzr, [sp, #96]
+  40185c:	2d5273ff 	ldp	s31, s28, [sp, #144]
+  401860:	2f2807d6 	ushr	v22.2s, v30.2s, #24
+  401864:	2f3807d8 	ushr	v24.2s, v30.2s, #8
+  401868:	2f3007da 	ushr	v26.2s, v30.2s, #16
+  40186c:	2f2807f7 	ushr	v23.2s, v31.2s, #24
+  401870:	2f3807fd 	ushr	v29.2s, v31.2s, #8
+  401874:	2f3007f9 	ushr	v25.2s, v31.2s, #16
+  401878:	6e0306d8 	mov	v24.b[1], v22.b[0]
+  40187c:	2f280776 	ushr	v22.2s, v27.2s, #24
+  401880:	6e03075e 	mov	v30.b[1], v26.b[0]
+  401884:	2f38077a 	ushr	v26.2s, v27.2s, #8
+  401888:	6e0306fd 	mov	v29.b[1], v23.b[0]
+  40188c:	2f280797 	ushr	v23.2s, v28.2s, #24
+  401890:	6e03073f 	mov	v31.b[1], v25.b[0]
+  401894:	2f380799 	ushr	v25.2s, v28.2s, #8
+  401898:	f9400a80 	ldr	x0, [x20, #16]
+  40189c:	6e050758 	mov	v24.b[2], v26.b[0]
+  4018a0:	6e05077e 	mov	v30.b[2], v27.b[0]
+  4018a4:	2f30077a 	ushr	v26.2s, v27.2s, #16
+  4018a8:	6e05073d 	mov	v29.b[2], v25.b[0]
+  4018ac:	2f30079b 	ushr	v27.2s, v28.2s, #16
+  4018b0:	6e05079f 	mov	v31.b[2], v28.b[0]
+  4018b4:	bd409bfc 	ldr	s28, [sp, #152]
+  4018b8:	6e0706d8 	mov	v24.b[3], v22.b[0]
+  4018bc:	6e07075e 	mov	v30.b[3], v26.b[0]
+  4018c0:	2d4d6bf9 	ldp	s25, s26, [sp, #104]
+  4018c4:	6e0706fd 	mov	v29.b[3], v23.b[0]
+  4018c8:	6e07077f 	mov	v31.b[3], v27.b[0]
+  4018cc:	2f38079b 	ushr	v27.2s, v28.2s, #8
+  4018d0:	f80643e0 	stur	x0, [sp, #100]
+  4018d4:	2f380735 	ushr	v21.2s, v25.2s, #8
+  4018d8:	2f280736 	ushr	v22.2s, v25.2s, #24
+  4018dc:	2f300737 	ushr	v23.2s, v25.2s, #16
+  4018e0:	6e09073e 	mov	v30.b[4], v25.b[0]
+  4018e4:	6e09077d 	mov	v29.b[4], v27.b[0]
+  4018e8:	2f280799 	ushr	v25.2s, v28.2s, #24
+  4018ec:	6e09079f 	mov	v31.b[4], v28.b[0]
+  4018f0:	2f30079c 	ushr	v28.2s, v28.2s, #16
+  4018f4:	6e0906b8 	mov	v24.b[4], v21.b[0]
+  4018f8:	bd409ffb 	ldr	s27, [sp, #156]
+  4018fc:	2f380754 	ushr	v20.2s, v26.2s, #8
+  401900:	6e0b06fe 	mov	v30.b[5], v23.b[0]
+  401904:	6e0b073d 	mov	v29.b[5], v25.b[0]
+  401908:	2f280757 	ushr	v23.2s, v26.2s, #24
+  40190c:	6e0b079f 	mov	v31.b[5], v28.b[0]
+  401910:	2f380775 	ushr	v21.2s, v27.2s, #8
+  401914:	6e0b06d8 	mov	v24.b[5], v22.b[0]
+  401918:	2f280779 	ushr	v25.2s, v27.2s, #24
+  40191c:	2f300756 	ushr	v22.2s, v26.2s, #16
+  401920:	6e0d075e 	mov	v30.b[6], v26.b[0]
+  401924:	2f30077c 	ushr	v28.2s, v27.2s, #16
+  401928:	6e0d06bd 	mov	v29.b[6], v21.b[0]
+  40192c:	6e0d077f 	mov	v31.b[6], v27.b[0]
+  401930:	6e0d0698 	mov	v24.b[6], v20.b[0]
+  401934:	6e0f06de 	mov	v30.b[7], v22.b[0]
+  401938:	6e0f073d 	mov	v29.b[7], v25.b[0]
+  40193c:	6e0f079f 	mov	v31.b[7], v28.b[0]
+  401940:	6e0f06f8 	mov	v24.b[7], v23.b[0]
+  401944:	4e1d3bff 	zip1	v31.16b, v31.16b, v29.16b
+  401948:	4e183bde 	zip1	v30.16b, v30.16b, v24.16b
+  40194c:	ad027ffe 	stp	q30, q31, [sp, #64]
+  401950:	97fffd38 	bl	400e30 <EVP_CIPHER_CTX_new@plt>
+  401954:	aa0003f4 	mov	x20, x0
+  401958:	b4000560 	cbz	x0, 401a04 <aead_open+0x220>
+  40195c:	97fffd59 	bl	400ec0 <EVP_chacha20_poly1305@plt>
+  401960:	aa0003e1 	mov	x1, x0
+  401964:	d2800004 	mov	x4, #0x0                   	// #0
+  401968:	aa1403e0 	mov	x0, x20
+  40196c:	d2800003 	mov	x3, #0x0                   	// #0
+  401970:	d2800002 	mov	x2, #0x0                   	// #0
+  401974:	97fffcff 	bl	400d70 <EVP_DecryptInit_ex@plt>
+  401978:	7100041f 	cmp	w0, #0x1
+  40197c:	540004c0 	b.eq	401a14 <aead_open+0x230>  // b.none
+  401980:	aa1403e0 	mov	x0, x20
+  401984:	97fffd43 	bl	400e90 <EVP_CIPHER_CTX_free@plt>
+  401988:	a9007e7f 	stp	xzr, xzr, [x19]
+  40198c:	52800057 	mov	w23, #0x2                   	// #2
+  401990:	a9017e7f 	stp	xzr, xzr, [x19, #16]
+  401994:	a9027e7f 	stp	xzr, xzr, [x19, #32]
+  401998:	a94153f3 	ldp	x19, x20, [sp, #16]
+  40199c:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  4019a0:	2a1703e0 	mov	w0, w23
+  4019a4:	a94363f7 	ldp	x23, x24, [sp, #48]
+  4019a8:	a8ca7bfd 	ldp	x29, x30, [sp], #160
+  4019ac:	d65f03c0 	ret
+  4019b0:	a94153f3 	ldp	x19, x20, [sp, #16]
+  4019b4:	2a1703e0 	mov	w0, w23
+  4019b8:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  4019bc:	a94363f7 	ldp	x23, x24, [sp, #48]
+  4019c0:	a8ca7bfd 	ldp	x29, x30, [sp], #160
+  4019c4:	d65f03c0 	ret
+  4019c8:	97fffd1a 	bl	400e30 <EVP_CIPHER_CTX_new@plt>
+  4019cc:	aa0003f8 	mov	x24, x0
+  4019d0:	b40001a0 	cbz	x0, 401a04 <aead_open+0x220>
+  4019d4:	97fffd43 	bl	400ee0 <EVP_aes_256_gcm@plt>
+  4019d8:	aa0003e1 	mov	x1, x0
+  4019dc:	d2800004 	mov	x4, #0x0                   	// #0
+  4019e0:	aa1803e0 	mov	x0, x24
+  4019e4:	d2800003 	mov	x3, #0x0                   	// #0
+  4019e8:	d2800002 	mov	x2, #0x0                   	// #0
+  4019ec:	97fffce1 	bl	400d70 <EVP_DecryptInit_ex@plt>
+  4019f0:	7100041f 	cmp	w0, #0x1
+  4019f4:	54000440 	b.eq	401a7c <aead_open+0x298>  // b.none
+  4019f8:	aa1803e0 	mov	x0, x24
+  4019fc:	97fffd25 	bl	400e90 <EVP_CIPHER_CTX_free@plt>
+  401a00:	17ffffe2 	b	401988 <aead_open+0x1a4>
+  401a04:	a94153f3 	ldp	x19, x20, [sp, #16]
+  401a08:	52800077 	mov	w23, #0x3                   	// #3
+  401a0c:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  401a10:	17ffffe4 	b	4019a0 <aead_open+0x1bc>
+  401a14:	aa1403e0 	mov	x0, x20
+  401a18:	d2800003 	mov	x3, #0x0                   	// #0
+  401a1c:	52800182 	mov	w2, #0xc                   	// #12
+  401a20:	52800121 	mov	w1, #0x9                   	// #9
+  401a24:	97fffd2b 	bl	400ed0 <EVP_CIPHER_CTX_ctrl@plt>
+  401a28:	7100041f 	cmp	w0, #0x1
+  401a2c:	54fffaa1 	b.ne	401980 <aead_open+0x19c>  // b.any
+  401a30:	910183e4 	add	x4, sp, #0x60
+  401a34:	910103e3 	add	x3, sp, #0x40
+  401a38:	aa1403e0 	mov	x0, x20
+  401a3c:	d2800002 	mov	x2, #0x0                   	// #0
+  401a40:	d2800001 	mov	x1, #0x0                   	// #0
+  401a44:	97fffccb 	bl	400d70 <EVP_DecryptInit_ex@plt>
+  401a48:	7100041f 	cmp	w0, #0x1
+  401a4c:	54fff9a1 	b.ne	401980 <aead_open+0x19c>  // b.any
+  401a50:	aa1603e2 	mov	x2, x22
+  401a54:	aa1303e1 	mov	x1, x19
+  401a58:	aa1403e0 	mov	x0, x20
+  401a5c:	97fffe31 	bl	401320 <chacha_dec_final>
+  401a60:	34fff900 	cbz	w0, 401980 <aead_open+0x19c>
+  401a64:	aa1403e0 	mov	x0, x20
+  401a68:	52800017 	mov	w23, #0x0                   	// #0
+  401a6c:	97fffd09 	bl	400e90 <EVP_CIPHER_CTX_free@plt>
+  401a70:	a94153f3 	ldp	x19, x20, [sp, #16]
+  401a74:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  401a78:	17ffffca 	b	4019a0 <aead_open+0x1bc>
+  401a7c:	aa1803e0 	mov	x0, x24
+  401a80:	d2800003 	mov	x3, #0x0                   	// #0
+  401a84:	52800182 	mov	w2, #0xc                   	// #12
+  401a88:	52800121 	mov	w1, #0x9                   	// #9
+  401a8c:	97fffd11 	bl	400ed0 <EVP_CIPHER_CTX_ctrl@plt>
+  401a90:	7100041f 	cmp	w0, #0x1
+  401a94:	54fffb21 	b.ne	4019f8 <aead_open+0x214>  // b.any
+  401a98:	aa1403e4 	mov	x4, x20
+  401a9c:	aa1503e3 	mov	x3, x21
+  401aa0:	aa1803e0 	mov	x0, x24
+  401aa4:	d2800002 	mov	x2, #0x0                   	// #0
+  401aa8:	d2800001 	mov	x1, #0x0                   	// #0
+  401aac:	97fffcb1 	bl	400d70 <EVP_DecryptInit_ex@plt>
+  401ab0:	7100041f 	cmp	w0, #0x1
+  401ab4:	54fffa21 	b.ne	4019f8 <aead_open+0x214>  // b.any
+  401ab8:	aa1603e2 	mov	x2, x22
+  401abc:	aa1303e1 	mov	x1, x19
+  401ac0:	aa1803e0 	mov	x0, x24
+  401ac4:	97fffe17 	bl	401320 <chacha_dec_final>
+  401ac8:	34fff980 	cbz	w0, 4019f8 <aead_open+0x214>
+  401acc:	aa1803e0 	mov	x0, x24
+  401ad0:	97fffcf0 	bl	400e90 <EVP_CIPHER_CTX_free@plt>
+  401ad4:	a94153f3 	ldp	x19, x20, [sp, #16]
+  401ad8:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  401adc:	17ffffb1 	b	4019a0 <aead_open+0x1bc>
+
+0000000000401ae0 <beacon_weak_key>:
+  401ae0:	a9bd7bfd 	stp	x29, x30, [sp, #-48]!
+  401ae4:	910003fd 	mov	x29, sp
+  401ae8:	a90153f3 	stp	x19, x20, [sp, #16]
+  401aec:	d2800013 	mov	x19, #0x0                   	// #0
+  401af0:	a9025bf5 	stp	x21, x22, [sp, #32]
+  401af4:	aa0103f6 	mov	x22, x1
+  401af8:	aa0003f5 	mov	x21, x0
+  401afc:	97fffca9 	bl	400da0 <strlen@plt>
+  401b00:	aa0003e2 	mov	x2, x0
+  401b04:	aa0003f4 	mov	x20, x0
+  401b08:	aa1503e1 	mov	x1, x21
+  401b0c:	52800000 	mov	w0, #0x0                   	// #0
+  401b10:	9400009c 	bl	401d80 <crc32_le>
+  401b14:	d503201f 	nop
+  401b18:	d503201f 	nop
+  401b1c:	d503201f 	nop
+  401b20:	aa1403e2 	mov	x2, x20
+  401b24:	aa1503e1 	mov	x1, x21
+  401b28:	94000096 	bl	401d80 <crc32_le>
+  401b2c:	38336ac0 	strb	w0, [x22, x19]
+  401b30:	91000673 	add	x19, x19, #0x1
+  401b34:	f100827f 	cmp	x19, #0x20
+  401b38:	54ffff41 	b.ne	401b20 <beacon_weak_key+0x40>  // b.any
+  401b3c:	a94153f3 	ldp	x19, x20, [sp, #16]
+  401b40:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  401b44:	a8c37bfd 	ldp	x29, x30, [sp], #48
+  401b48:	d65f03c0 	ret
+
+0000000000401b4c <beacon_nonce>:
+  401b4c:	b8004420 	str	w0, [x1], #4
+  401b50:	a9007c3f 	stp	xzr, xzr, [x1]
+  401b54:	b900103f 	str	wzr, [x1, #16]
+  401b58:	d65f03c0 	ret
+  401b5c:	d503201f 	nop
+
+0000000000401b60 <beacon_seal>:
+  401b60:	a9bd7bfd 	stp	x29, x30, [sp, #-48]!
+  401b64:	2a0103e4 	mov	w4, w1
+  401b68:	910003fd 	mov	x29, sp
+  401b6c:	910063e1 	add	x1, sp, #0x18
+  401b70:	b9001be4 	str	w4, [sp, #24]
+  401b74:	910013e4 	add	x4, sp, #0x4
+  401b78:	a901fc9f 	stp	xzr, xzr, [x4, #24]
+  401b7c:	b9002fff 	str	wzr, [sp, #44]
+  401b80:	97fffe2b 	bl	40142c <aead_seal>
+  401b84:	7100001f 	cmp	w0, #0x0
+  401b88:	1a9f17e0 	cset	w0, eq	// eq = none
+  401b8c:	a8c37bfd 	ldp	x29, x30, [sp], #48
+  401b90:	d65f03c0 	ret
+  401b94:	d503201f 	nop
+  401b98:	d503201f 	nop
+  401b9c:	d503201f 	nop
+
+0000000000401ba0 <camera_rtsp_url>:
+  401ba0:	f100001f 	cmp	x0, #0x0
+  401ba4:	fa401864 	ccmp	x3, #0x0, #0x4, ne	// ne = any
+  401ba8:	fa401844 	ccmp	x2, #0x0, #0x4, ne	// ne = any
+  401bac:	54000061 	b.ne	401bb8 <camera_rtsp_url+0x18>  // b.any
+  401bb0:	52800000 	mov	w0, #0x0                   	// #0
+  401bb4:	d65f03c0 	ret
+  401bb8:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+  401bbc:	12003c25 	and	w5, w1, #0xffff
+  401bc0:	aa0003e4 	mov	x4, x0
+  401bc4:	910003fd 	mov	x29, sp
+  401bc8:	aa0203e0 	mov	x0, x2
+  401bcc:	f9000bf3 	str	x19, [sp, #16]
+  401bd0:	aa0303f3 	mov	x19, x3
+  401bd4:	aa1303e1 	mov	x1, x19
+  401bd8:	b0000006 	adrp	x6, 402000 <identity_pubkey+0x20>
+  401bdc:	b0000002 	adrp	x2, 402000 <identity_pubkey+0x20>
+  401be0:	911f40c6 	add	x6, x6, #0x7d0
+  401be4:	911fa042 	add	x2, x2, #0x7e8
+  401be8:	b0000003 	adrp	x3, 402000 <identity_pubkey+0x20>
+  401bec:	911f6063 	add	x3, x3, #0x7d8
+  401bf0:	97fffcb0 	bl	400eb0 <snprintf@plt>
+  401bf4:	eb20c27f 	cmp	x19, w0, sxtw
+  401bf8:	f9400bf3 	ldr	x19, [sp, #16]
+  401bfc:	1a9f97e0 	cset	w0, hi	// hi = pmore
+  401c00:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  401c04:	d65f03c0 	ret
+
+0000000000401c08 <camera_mjpeg_url>:
+  401c08:	f100001f 	cmp	x0, #0x0
+  401c0c:	fa401864 	ccmp	x3, #0x0, #0x4, ne	// ne = any
+  401c10:	fa401844 	ccmp	x2, #0x0, #0x4, ne	// ne = any
+  401c14:	54000061 	b.ne	401c20 <camera_mjpeg_url+0x18>  // b.any
+  401c18:	52800000 	mov	w0, #0x0                   	// #0
+  401c1c:	d65f03c0 	ret
+  401c20:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+  401c24:	12003c25 	and	w5, w1, #0xffff
+  401c28:	aa0003e4 	mov	x4, x0
+  401c2c:	910003fd 	mov	x29, sp
+  401c30:	aa0203e0 	mov	x0, x2
+  401c34:	f9000bf3 	str	x19, [sp, #16]
+  401c38:	aa0303f3 	mov	x19, x3
+  401c3c:	aa1303e1 	mov	x1, x19
+  401c40:	b0000006 	adrp	x6, 402000 <identity_pubkey+0x20>
+  401c44:	b0000002 	adrp	x2, 402000 <identity_pubkey+0x20>
+  401c48:	911fe0c6 	add	x6, x6, #0x7f8
+  401c4c:	911fa042 	add	x2, x2, #0x7e8
+  401c50:	b0000003 	adrp	x3, 402000 <identity_pubkey+0x20>
+  401c54:	91202063 	add	x3, x3, #0x808
+  401c58:	97fffc96 	bl	400eb0 <snprintf@plt>
+  401c5c:	eb20c27f 	cmp	x19, w0, sxtw
+  401c60:	f9400bf3 	ldr	x19, [sp, #16]
+  401c64:	1a9f97e0 	cset	w0, hi	// hi = pmore
+  401c68:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  401c6c:	d65f03c0 	ret
+  401c70:	d503201f 	nop
+  401c74:	d503201f 	nop
+  401c78:	d503201f 	nop
+  401c7c:	d503201f 	nop
+
+0000000000401c80 <collector_init>:
+  401c80:	f00000e0 	adrp	x0, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  401c84:	9105c001 	add	x1, x0, #0x170
+  401c88:	f900b81f 	str	xzr, [x0, #368]
+  401c8c:	b900083f 	str	wzr, [x1, #8]
+  401c90:	d65f03c0 	ret
+  401c94:	d503201f 	nop
+  401c98:	d503201f 	nop
+  401c9c:	d503201f 	nop
+
+0000000000401ca0 <collector_accept>:
+  401ca0:	f101003f 	cmp	x1, #0x40
+  401ca4:	f00000e1 	adrp	x1, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  401ca8:	fa400804 	ccmp	x0, #0x0, #0x4, eq	// eq = none
+  401cac:	54000100 	b.eq	401ccc <collector_accept+0x2c>  // b.none
+  401cb0:	9105c024 	add	x4, x1, #0x170
+  401cb4:	b9417023 	ldr	w3, [x1, #368]
+  401cb8:	52800020 	mov	w0, #0x1                   	// #1
+  401cbc:	b9000882 	str	w2, [x4, #8]
+  401cc0:	0b000062 	add	w2, w3, w0
+  401cc4:	b9017022 	str	w2, [x1, #368]
+  401cc8:	d65f03c0 	ret
+  401ccc:	9105c021 	add	x1, x1, #0x170
+  401cd0:	52800000 	mov	w0, #0x0                   	// #0
+  401cd4:	b9400422 	ldr	w2, [x1, #4]
+  401cd8:	11000442 	add	w2, w2, #0x1
+  401cdc:	b9000422 	str	w2, [x1, #4]
+  401ce0:	d65f03c0 	ret
+
+0000000000401ce4 <collector_stats>:
+  401ce4:	f00000e0 	adrp	x0, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  401ce8:	9105c000 	add	x0, x0, #0x170
+  401cec:	d65f03c0 	ret
+  401cf0:	d503201f 	nop
+  401cf4:	d503201f 	nop
+  401cf8:	d503201f 	nop
+  401cfc:	d503201f 	nop
+
+0000000000401d00 <container_magic>:
+  401d00:	b9400000 	ldr	w0, [x0]
+  401d04:	d65f03c0 	ret
+
+0000000000401d08 <container_length>:
+  401d08:	b9400400 	ldr	w0, [x0, #4]
+  401d0c:	d65f03c0 	ret
+
+0000000000401d10 <container_tag_ok>:
+  401d10:	f9400400 	ldr	x0, [x0, #8]
+  401d14:	d28f4ce1 	mov	x1, #0x7a67                	// #31335
+  401d18:	f2ae0d21 	movk	x1, #0x7069, lsl #16
+  401d1c:	f2ccad01 	movk	x1, #0x6568, lsl #32
+  401d20:	f2ec8c21 	movk	x1, #0x6461, lsl #48
+  401d24:	eb01001f 	cmp	x0, x1
+  401d28:	1a9f17e0 	cset	w0, eq	// eq = none
+  401d2c:	d65f03c0 	ret
+
+0000000000401d30 <container_valid>:
+  401d30:	f100001f 	cmp	x0, #0x0
+  401d34:	aa0003e2 	mov	x2, x0
+  401d38:	fa4f1820 	ccmp	x1, #0xf, #0x0, ne	// ne = any
+  401d3c:	1a9f87e0 	cset	w0, ls	// ls = plast
+  401d40:	540001c9 	b.ls	401d78 <container_valid+0x48>  // b.plast
+  401d44:	b9400041 	ldr	w1, [x2]
+  401d48:	5146e021 	sub	w1, w1, #0x1b8, lsl #12
+  401d4c:	71108421 	subs	w1, w1, #0x421
+  401d50:	54000040 	b.eq	401d58 <container_valid+0x28>  // b.none
+  401d54:	d65f03c0 	ret
+  401d58:	f9400441 	ldr	x1, [x2, #8]
+  401d5c:	d28f4ce0 	mov	x0, #0x7a67                	// #31335
+  401d60:	f2ae0d20 	movk	x0, #0x7069, lsl #16
+  401d64:	f2ccad00 	movk	x0, #0x6568, lsl #32
+  401d68:	f2ec8c20 	movk	x0, #0x6461, lsl #48
+  401d6c:	eb00003f 	cmp	x1, x0
+  401d70:	1a9f17e0 	cset	w0, eq	// eq = none
+  401d74:	d65f03c0 	ret
+  401d78:	52800000 	mov	w0, #0x0                   	// #0
+  401d7c:	d65f03c0 	ret
+
+0000000000401d80 <crc32_le>:
+  401d80:	b4000282 	cbz	x2, 401dd0 <crc32_le+0x50>
+  401d84:	52906403 	mov	w3, #0x8320                	// #33568
+  401d88:	aa0103e4 	mov	x4, x1
+  401d8c:	8b020025 	add	x5, x1, x2
+  401d90:	72bdb703 	movk	w3, #0xedb8, lsl #16
+  401d94:	d503201f 	nop
+  401d98:	d503201f 	nop
+  401d9c:	d503201f 	nop
+  401da0:	39400082 	ldrb	w2, [x4]
+  401da4:	52800101 	mov	w1, #0x8                   	// #8
+  401da8:	4a020000 	eor	w0, w0, w2
+  401dac:	93400002 	sbfx	x2, x0, #0, #1
+  401db0:	51000421 	sub	w1, w1, #0x1
+  401db4:	0a030042 	and	w2, w2, w3
+  401db8:	72001c21 	ands	w1, w1, #0xff
+  401dbc:	4a400440 	eor	w0, w2, w0, lsr #1
+  401dc0:	54ffff61 	b.ne	401dac <crc32_le+0x2c>  // b.any
+  401dc4:	91000484 	add	x4, x4, #0x1
+  401dc8:	eb05009f 	cmp	x4, x5
+  401dcc:	54fffea1 	b.ne	401da0 <crc32_le+0x20>  // b.any
+  401dd0:	d65f03c0 	ret
+  401dd4:	d503201f 	nop
+  401dd8:	d503201f 	nop
+  401ddc:	d503201f 	nop
+
+0000000000401de0 <crc32_uboot>:
+  401de0:	b40002c1 	cbz	x1, 401e38 <crc32_uboot+0x58>
+  401de4:	52906403 	mov	w3, #0x8320                	// #33568
+  401de8:	aa0003e4 	mov	x4, x0
+  401dec:	8b010005 	add	x5, x0, x1
+  401df0:	12800002 	mov	w2, #0xffffffff            	// #-1
+  401df4:	72bdb703 	movk	w3, #0xedb8, lsl #16
+  401df8:	d503201f 	nop
+  401dfc:	d503201f 	nop
+  401e00:	39400081 	ldrb	w1, [x4]
+  401e04:	52800100 	mov	w0, #0x8                   	// #8
+  401e08:	4a010042 	eor	w2, w2, w1
+  401e0c:	93400041 	sbfx	x1, x2, #0, #1
+  401e10:	51000400 	sub	w0, w0, #0x1
+  401e14:	0a030021 	and	w1, w1, w3
+  401e18:	72001c00 	ands	w0, w0, #0xff
+  401e1c:	4a420422 	eor	w2, w1, w2, lsr #1
+  401e20:	54ffff61 	b.ne	401e0c <crc32_uboot+0x2c>  // b.any
+  401e24:	91000484 	add	x4, x4, #0x1
+  401e28:	eb05009f 	cmp	x4, x5
+  401e2c:	54fffea1 	b.ne	401e00 <crc32_uboot+0x20>  // b.any
+  401e30:	2a2203e0 	mvn	w0, w2
+  401e34:	d65f03c0 	ret
+  401e38:	52800000 	mov	w0, #0x0                   	// #0
+  401e3c:	d65f03c0 	ret
+
+0000000000401e40 <crc16_ccitt>:
+  401e40:	b40002e1 	cbz	x1, 401e9c <crc16_ccitt+0x5c>
+  401e44:	aa0003e6 	mov	x6, x0
+  401e48:	52820425 	mov	w5, #0x1021                	// #4129
+  401e4c:	8b0100c7 	add	x7, x6, x1
+  401e50:	529fffe0 	mov	w0, #0xffff                	// #65535
+  401e54:	d503201f 	nop
+  401e58:	d503201f 	nop
+  401e5c:	d503201f 	nop
+  401e60:	394000c2 	ldrb	w2, [x6]
+  401e64:	52800101 	mov	w1, #0x8                   	// #8
+  401e68:	4a022004 	eor	w4, w0, w2, lsl #8
+  401e6c:	531f3800 	ubfiz	w0, w0, #1, #15
+  401e70:	51000421 	sub	w1, w1, #0x1
+  401e74:	4a050003 	eor	w3, w0, w5
+  401e78:	f271009f 	tst	x4, #0x8000
+  401e7c:	531f1842 	ubfiz	w2, w2, #1, #7
+  401e80:	1a830000 	csel	w0, w0, w3, eq	// eq = none
+  401e84:	72001c21 	ands	w1, w1, #0xff
+  401e88:	54ffff01 	b.ne	401e68 <crc16_ccitt+0x28>  // b.any
+  401e8c:	910004c6 	add	x6, x6, #0x1
+  401e90:	eb0600ff 	cmp	x7, x6
+  401e94:	54fffe61 	b.ne	401e60 <crc16_ccitt+0x20>  // b.any
+  401e98:	d65f03c0 	ret
+  401e9c:	529fffe0 	mov	w0, #0xffff                	// #65535
+  401ea0:	d65f03c0 	ret
+  401ea4:	d503201f 	nop
+  401ea8:	d503201f 	nop
+  401eac:	d503201f 	nop
+  401eb0:	d503201f 	nop
+  401eb4:	d503201f 	nop
+  401eb8:	d503201f 	nop
+  401ebc:	d503201f 	nop
+
+0000000000401ec0 <env_compute_crc>:
+  401ec0:	f100001f 	cmp	x0, #0x0
+  401ec4:	fa431820 	ccmp	x1, #0x3, #0x0, ne	// ne = any
+  401ec8:	54000068 	b.hi	401ed4 <env_compute_crc+0x14>  // b.pmore
+  401ecc:	52800000 	mov	w0, #0x0                   	// #0
+  401ed0:	d65f03c0 	ret
+  401ed4:	d1001021 	sub	x1, x1, #0x4
+  401ed8:	91001000 	add	x0, x0, #0x4
+  401edc:	17ffffc1 	b	401de0 <crc32_uboot>
+
+0000000000401ee0 <env_crc_valid>:
+  401ee0:	f100001f 	cmp	x0, #0x0
+  401ee4:	fa431820 	ccmp	x1, #0x3, #0x0, ne	// ne = any
+  401ee8:	54000068 	b.hi	401ef4 <env_crc_valid+0x14>  // b.pmore
+  401eec:	52800000 	mov	w0, #0x0                   	// #0
+  401ef0:	d65f03c0 	ret
+  401ef4:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+  401ef8:	d1001021 	sub	x1, x1, #0x4
+  401efc:	910003fd 	mov	x29, sp
+  401f00:	f9000bf3 	str	x19, [sp, #16]
+  401f04:	b8404413 	ldr	w19, [x0], #4
+  401f08:	97ffffb6 	bl	401de0 <crc32_uboot>
+  401f0c:	6b00027f 	cmp	w19, w0
+  401f10:	f9400bf3 	ldr	x19, [sp, #16]
+  401f14:	1a9f17e0 	cset	w0, eq	// eq = none
+  401f18:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  401f1c:	d65f03c0 	ret
+
+0000000000401f20 <env_find>:
+  401f20:	f100005f 	cmp	x2, #0x0
+  401f24:	fa431820 	ccmp	x1, #0x3, #0x0, ne	// ne = any
+  401f28:	fa408804 	ccmp	x0, #0x0, #0x4, hi	// hi = pmore
+  401f2c:	54000520 	b.eq	401fd0 <env_find+0xb0>  // b.none
+  401f30:	a9bc7bfd 	stp	x29, x30, [sp, #-64]!
+  401f34:	910003fd 	mov	x29, sp
+  401f38:	a90153f3 	stp	x19, x20, [sp, #16]
+  401f3c:	aa0103f4 	mov	x20, x1
+  401f40:	a9025bf5 	stp	x21, x22, [sp, #32]
+  401f44:	a90363f7 	stp	x23, x24, [sp, #48]
+  401f48:	aa0203f7 	mov	x23, x2
+  401f4c:	aa0003f8 	mov	x24, x0
+  401f50:	aa0203e0 	mov	x0, x2
+  401f54:	97fffb93 	bl	400da0 <strlen@plt>
+  401f58:	91001413 	add	x19, x0, #0x5
+  401f5c:	aa0003f6 	mov	x22, x0
+  401f60:	eb13029f 	cmp	x20, x19
+  401f64:	540002a9 	b.ls	401fb8 <env_find+0x98>  // b.plast
+  401f68:	d1000715 	sub	x21, x24, #0x1
+  401f6c:	14000004 	b	401f7c <env_find+0x5c>
+  401f70:	91000673 	add	x19, x19, #0x1
+  401f74:	eb14027f 	cmp	x19, x20
+  401f78:	54000202 	b.cs	401fb8 <env_find+0x98>  // b.hs, b.nlast
+  401f7c:	38736aa3 	ldrb	w3, [x21, x19]
+  401f80:	7100f47f 	cmp	w3, #0x3d
+  401f84:	54ffff61 	b.ne	401f70 <env_find+0x50>  // b.any
+  401f88:	cb160260 	sub	x0, x19, x22
+  401f8c:	aa1603e2 	mov	x2, x22
+  401f90:	8b0002a0 	add	x0, x21, x0
+  401f94:	aa1703e1 	mov	x1, x23
+  401f98:	97fffb8a 	bl	400dc0 <memcmp@plt>
+  401f9c:	35fffea0 	cbnz	w0, 401f70 <env_find+0x50>
+  401fa0:	8b130300 	add	x0, x24, x19
+  401fa4:	a94153f3 	ldp	x19, x20, [sp, #16]
+  401fa8:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  401fac:	a94363f7 	ldp	x23, x24, [sp, #48]
+  401fb0:	a8c47bfd 	ldp	x29, x30, [sp], #64
+  401fb4:	d65f03c0 	ret
+  401fb8:	a94153f3 	ldp	x19, x20, [sp, #16]
+  401fbc:	d2800000 	mov	x0, #0x0                   	// #0
+  401fc0:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  401fc4:	a94363f7 	ldp	x23, x24, [sp, #48]
+  401fc8:	a8c47bfd 	ldp	x29, x30, [sp], #64
+  401fcc:	d65f03c0 	ret
+  401fd0:	d2800000 	mov	x0, #0x0                   	// #0
+  401fd4:	d65f03c0 	ret
+  401fd8:	d503201f 	nop
+  401fdc:	d503201f 	nop
+
+0000000000401fe0 <identity_pubkey>:
+  401fe0:	a9bd7bfd 	stp	x29, x30, [sp, #-48]!
+  401fe4:	aa0003e2 	mov	x2, x0
+  401fe8:	d2800403 	mov	x3, #0x20                  	// #32
+  401fec:	910003fd 	mov	x29, sp
+  401ff0:	528087e0 	mov	w0, #0x43f                 	// #1087
+  401ff4:	a90153f3 	stp	x19, x20, [sp, #16]
+  401ff8:	aa0103f4 	mov	x20, x1
+  401ffc:	d2800001 	mov	x1, #0x0                   	// #0
+  402000:	97fffb98 	bl	400e60 <EVP_PKEY_new_raw_private_key@plt>
+  402004:	d2800401 	mov	x1, #0x20                  	// #32
+  402008:	f90017e1 	str	x1, [sp, #40]
+  40200c:	b4000100 	cbz	x0, 40202c <identity_pubkey+0x4c>
+  402010:	aa0003f3 	mov	x19, x0
+  402014:	aa1403e1 	mov	x1, x20
+  402018:	9100a3e2 	add	x2, sp, #0x28
+  40201c:	97fffbb5 	bl	400ef0 <EVP_PKEY_get_raw_public_key@plt>
+  402020:	7100041f 	cmp	w0, #0x1
+  402024:	aa1303e0 	mov	x0, x19
+  402028:	540000c0 	b.eq	402040 <identity_pubkey+0x60>  // b.none
+  40202c:	97fffb7d 	bl	400e20 <EVP_PKEY_free@plt>
+  402030:	52800000 	mov	w0, #0x0                   	// #0
+  402034:	a94153f3 	ldp	x19, x20, [sp, #16]
+  402038:	a8c37bfd 	ldp	x29, x30, [sp], #48
+  40203c:	d65f03c0 	ret
+  402040:	97fffb78 	bl	400e20 <EVP_PKEY_free@plt>
+  402044:	f94017e0 	ldr	x0, [sp, #40]
+  402048:	a94153f3 	ldp	x19, x20, [sp, #16]
+  40204c:	f100801f 	cmp	x0, #0x20
+  402050:	1a9f17e0 	cset	w0, eq	// eq = none
+  402054:	a8c37bfd 	ldp	x29, x30, [sp], #48
+  402058:	d65f03c0 	ret
+  40205c:	d503201f 	nop
+
+0000000000402060 <identity_sign>:
+  402060:	a9bb7bfd 	stp	x29, x30, [sp, #-80]!
+  402064:	910003fd 	mov	x29, sp
+  402068:	f9001bf7 	str	x23, [sp, #48]
+  40206c:	aa0203f7 	mov	x23, x2
+  402070:	aa0003e2 	mov	x2, x0
+  402074:	a9025bf5 	stp	x21, x22, [sp, #32]
+  402078:	aa0103f6 	mov	x22, x1
+  40207c:	aa0303f5 	mov	x21, x3
+  402080:	d2800001 	mov	x1, #0x0                   	// #0
+  402084:	d2800403 	mov	x3, #0x20                  	// #32
+  402088:	528087e0 	mov	w0, #0x43f                 	// #1087
+  40208c:	a90153f3 	stp	x19, x20, [sp, #16]
+  402090:	97fffb74 	bl	400e60 <EVP_PKEY_new_raw_private_key@plt>
+  402094:	aa0003f3 	mov	x19, x0
+  402098:	97fffb82 	bl	400ea0 <EVP_MD_CTX_new@plt>
+  40209c:	d2800801 	mov	x1, #0x40                  	// #64
+  4020a0:	f90027e1 	str	x1, [sp, #72]
+  4020a4:	f100027f 	cmp	x19, #0x0
+  4020a8:	fa401804 	ccmp	x0, #0x0, #0x4, ne	// ne = any
+  4020ac:	54000141 	b.ne	4020d4 <identity_sign+0x74>  // b.any
+  4020b0:	97fffba4 	bl	400f40 <EVP_MD_CTX_free@plt>
+  4020b4:	aa1303e0 	mov	x0, x19
+  4020b8:	97fffb5a 	bl	400e20 <EVP_PKEY_free@plt>
+  4020bc:	f9401bf7 	ldr	x23, [sp, #48]
+  4020c0:	52800000 	mov	w0, #0x0                   	// #0
+  4020c4:	a94153f3 	ldp	x19, x20, [sp, #16]
+  4020c8:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  4020cc:	a8c57bfd 	ldp	x29, x30, [sp], #80
+  4020d0:	d65f03c0 	ret
+  4020d4:	aa0003f4 	mov	x20, x0
+  4020d8:	aa1303e4 	mov	x4, x19
+  4020dc:	d2800003 	mov	x3, #0x0                   	// #0
+  4020e0:	d2800002 	mov	x2, #0x0                   	// #0
+  4020e4:	d2800001 	mov	x1, #0x0                   	// #0
+  4020e8:	97fffb3a 	bl	400dd0 <EVP_DigestSignInit@plt>
+  4020ec:	7100041f 	cmp	w0, #0x1
+  4020f0:	540000c0 	b.eq	402108 <identity_sign+0xa8>  // b.none
+  4020f4:	aa1403e0 	mov	x0, x20
+  4020f8:	97fffb92 	bl	400f40 <EVP_MD_CTX_free@plt>
+  4020fc:	aa1303e0 	mov	x0, x19
+  402100:	97fffb48 	bl	400e20 <EVP_PKEY_free@plt>
+  402104:	17ffffee 	b	4020bc <identity_sign+0x5c>
+  402108:	aa1703e4 	mov	x4, x23
+  40210c:	aa1603e3 	mov	x3, x22
+  402110:	aa1503e1 	mov	x1, x21
+  402114:	910123e2 	add	x2, sp, #0x48
+  402118:	aa1403e0 	mov	x0, x20
+  40211c:	97fffb09 	bl	400d40 <EVP_DigestSign@plt>
+  402120:	7100041f 	cmp	w0, #0x1
+  402124:	aa1403e0 	mov	x0, x20
+  402128:	54fffc41 	b.ne	4020b0 <identity_sign+0x50>  // b.any
+  40212c:	97fffb85 	bl	400f40 <EVP_MD_CTX_free@plt>
+  402130:	aa1303e0 	mov	x0, x19
+  402134:	97fffb3b 	bl	400e20 <EVP_PKEY_free@plt>
+  402138:	f94027e0 	ldr	x0, [sp, #72]
+  40213c:	f9401bf7 	ldr	x23, [sp, #48]
+  402140:	f101001f 	cmp	x0, #0x40
+  402144:	a94153f3 	ldp	x19, x20, [sp, #16]
+  402148:	1a9f17e0 	cset	w0, eq	// eq = none
+  40214c:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  402150:	a8c57bfd 	ldp	x29, x30, [sp], #80
+  402154:	d65f03c0 	ret
+  402158:	d503201f 	nop
+  40215c:	d503201f 	nop
+
+0000000000402160 <identity_verify>:
+  402160:	a9bc7bfd 	stp	x29, x30, [sp, #-64]!
+  402164:	910003fd 	mov	x29, sp
+  402168:	a9025bf5 	stp	x21, x22, [sp, #32]
+  40216c:	aa0203f6 	mov	x22, x2
+  402170:	aa0003e2 	mov	x2, x0
+  402174:	aa0303f5 	mov	x21, x3
+  402178:	d2800403 	mov	x3, #0x20                  	// #32
+  40217c:	f9001bf7 	str	x23, [sp, #48]
+  402180:	aa0103f7 	mov	x23, x1
+  402184:	d2800001 	mov	x1, #0x0                   	// #0
+  402188:	528087e0 	mov	w0, #0x43f                 	// #1087
+  40218c:	a90153f3 	stp	x19, x20, [sp, #16]
+  402190:	97fffb2c 	bl	400e40 <EVP_PKEY_new_raw_public_key@plt>
+  402194:	aa0003f3 	mov	x19, x0
+  402198:	97fffb42 	bl	400ea0 <EVP_MD_CTX_new@plt>
+  40219c:	aa0003f4 	mov	x20, x0
+  4021a0:	f100027f 	cmp	x19, #0x0
+  4021a4:	fa401804 	ccmp	x0, #0x0, #0x4, ne	// ne = any
+  4021a8:	54000181 	b.ne	4021d8 <identity_verify+0x78>  // b.any
+  4021ac:	52800015 	mov	w21, #0x0                   	// #0
+  4021b0:	aa1403e0 	mov	x0, x20
+  4021b4:	97fffb63 	bl	400f40 <EVP_MD_CTX_free@plt>
+  4021b8:	aa1303e0 	mov	x0, x19
+  4021bc:	97fffb19 	bl	400e20 <EVP_PKEY_free@plt>
+  4021c0:	f9401bf7 	ldr	x23, [sp, #48]
+  4021c4:	2a1503e0 	mov	w0, w21
+  4021c8:	a94153f3 	ldp	x19, x20, [sp, #16]
+  4021cc:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  4021d0:	a8c47bfd 	ldp	x29, x30, [sp], #64
+  4021d4:	d65f03c0 	ret
+  4021d8:	aa1303e4 	mov	x4, x19
+  4021dc:	d2800003 	mov	x3, #0x0                   	// #0
+  4021e0:	d2800002 	mov	x2, #0x0                   	// #0
+  4021e4:	d2800001 	mov	x1, #0x0                   	// #0
+  4021e8:	97fffb06 	bl	400e00 <EVP_DigestVerifyInit@plt>
+  4021ec:	7100041f 	cmp	w0, #0x1
+  4021f0:	54fffde1 	b.ne	4021ac <identity_verify+0x4c>  // b.any
+  4021f4:	aa1503e1 	mov	x1, x21
+  4021f8:	aa1603e4 	mov	x4, x22
+  4021fc:	aa1703e3 	mov	x3, x23
+  402200:	aa1403e0 	mov	x0, x20
+  402204:	d2800802 	mov	x2, #0x40                  	// #64
+  402208:	97fffae2 	bl	400d90 <EVP_DigestVerify@plt>
+  40220c:	7100041f 	cmp	w0, #0x1
+  402210:	1a9f17f5 	cset	w21, eq	// eq = none
+  402214:	17ffffe7 	b	4021b0 <identity_verify+0x50>
+  402218:	d503201f 	nop
+  40221c:	d503201f 	nop
+
+0000000000402220 <jffs2_magic>:
+  402220:	79400000 	ldrh	w0, [x0]
+  402224:	d65f03c0 	ret
+
+0000000000402228 <jffs2_type>:
+  402228:	79400400 	ldrh	w0, [x0, #2]
+  40222c:	d65f03c0 	ret
+
+0000000000402230 <jffs2_totlen>:
+  402230:	b9400400 	ldr	w0, [x0, #4]
+  402234:	d65f03c0 	ret
+  402238:	d503201f 	nop
+  40223c:	d503201f 	nop
+
+0000000000402240 <jffs2_hdr_crc_valid>:
+  402240:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+  402244:	d2800102 	mov	x2, #0x8                   	// #8
+  402248:	910003fd 	mov	x29, sp
+  40224c:	f9000bf3 	str	x19, [sp, #16]
+  402250:	aa0003f3 	mov	x19, x0
+  402254:	aa1303e1 	mov	x1, x19
+  402258:	52800000 	mov	w0, #0x0                   	// #0
+  40225c:	97fffec9 	bl	401d80 <crc32_le>
+  402260:	b9400a61 	ldr	w1, [x19, #8]
+  402264:	f9400bf3 	ldr	x19, [sp, #16]
+  402268:	6b00003f 	cmp	w1, w0
+  40226c:	1a9f17e0 	cset	w0, eq	// eq = none
+  402270:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  402274:	d65f03c0 	ret
+  402278:	d503201f 	nop
+  40227c:	d503201f 	nop
+
+0000000000402280 <kex_hkdf>:
+  402280:	a9af7bfd 	stp	x29, x30, [sp, #-272]!
+  402284:	910003fd 	mov	x29, sp
+  402288:	a90153f3 	stp	x19, x20, [sp, #16]
+  40228c:	aa0203f3 	mov	x19, x2
+  402290:	aa0303f4 	mov	x20, x3
+  402294:	a9025bf5 	stp	x21, x22, [sp, #32]
+  402298:	aa0703f6 	mov	x22, x7
+  40229c:	9102a3f5 	add	x21, sp, #0xa8
+  4022a0:	a90363f7 	stp	x23, x24, [sp, #48]
+  4022a4:	aa0403f8 	mov	x24, x4
+  4022a8:	aa0503f7 	mov	x23, x5
+  4022ac:	a9046bf9 	stp	x25, x26, [sp, #64]
+  4022b0:	aa0003fa 	mov	x26, x0
+  4022b4:	aa0603f9 	mov	x25, x6
+  4022b8:	f9002bfb 	str	x27, [sp, #80]
+  4022bc:	aa0103fb 	mov	x27, x1
+  4022c0:	b900abff 	str	wzr, [sp, #168]
+  4022c4:	97fffb1b 	bl	400f30 <EVP_sha256@plt>
+  4022c8:	aa1b03e4 	mov	x4, x27
+  4022cc:	aa1a03e3 	mov	x3, x26
+  4022d0:	2a1403e2 	mov	w2, w20
+  4022d4:	aa1303e1 	mov	x1, x19
+  4022d8:	aa1503e6 	mov	x6, x21
+  4022dc:	9101a3e5 	add	x5, sp, #0x68
+  4022e0:	97fffae8 	bl	400e80 <HMAC@plt>
+  4022e4:	b5000100 	cbnz	x0, 402304 <kex_hkdf+0x84>
+  4022e8:	f9402bfb 	ldr	x27, [sp, #80]
+  4022ec:	a94153f3 	ldp	x19, x20, [sp, #16]
+  4022f0:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  4022f4:	a94363f7 	ldp	x23, x24, [sp, #48]
+  4022f8:	a9446bf9 	ldp	x25, x26, [sp, #64]
+  4022fc:	a8d17bfd 	ldp	x29, x30, [sp], #272
+  402300:	d65f03c0 	ret
+  402304:	b4000636 	cbz	x22, 4023c8 <kex_hkdf+0x148>
+  402308:	d2800013 	mov	x19, #0x0                   	// #0
+  40230c:	d280001b 	mov	x27, #0x0                   	// #0
+  402310:	52800034 	mov	w20, #0x1                   	// #1
+  402314:	d280041a 	mov	x26, #0x20                  	// #32
+  402318:	d503201f 	nop
+  40231c:	d503201f 	nop
+  402320:	aa1303e2 	mov	x2, x19
+  402324:	910223e1 	add	x1, sp, #0x88
+  402328:	aa1503e0 	mov	x0, x21
+  40232c:	97fffa89 	bl	400d50 <memcpy@plt>
+  402330:	8b1302a0 	add	x0, x21, x19
+  402334:	8b1302f3 	add	x19, x23, x19
+  402338:	aa1703e2 	mov	x2, x23
+  40233c:	aa1803e1 	mov	x1, x24
+  402340:	97fffa84 	bl	400d50 <memcpy@plt>
+  402344:	b90067ff 	str	wzr, [sp, #100]
+  402348:	38336ab4 	strb	w20, [x21, x19]
+  40234c:	97fffaf9 	bl	400f30 <EVP_sha256@plt>
+  402350:	91000664 	add	x4, x19, #0x1
+  402354:	aa1503e3 	mov	x3, x21
+  402358:	9101a3e1 	add	x1, sp, #0x68
+  40235c:	cb1b02d3 	sub	x19, x22, x27
+  402360:	52800402 	mov	w2, #0x20                  	// #32
+  402364:	910193e6 	add	x6, sp, #0x64
+  402368:	910223e5 	add	x5, sp, #0x88
+  40236c:	97fffac5 	bl	400e80 <HMAC@plt>
+  402370:	f100827f 	cmp	x19, #0x20
+  402374:	aa0003e3 	mov	x3, x0
+  402378:	9a9a9273 	csel	x19, x19, x26, ls	// ls = plast
+  40237c:	910223e1 	add	x1, sp, #0x88
+  402380:	8b1b0320 	add	x0, x25, x27
+  402384:	aa1303e2 	mov	x2, x19
+  402388:	b5000123 	cbnz	x3, 4023ac <kex_hkdf+0x12c>
+  40238c:	f9402bfb 	ldr	x27, [sp, #80]
+  402390:	52800000 	mov	w0, #0x0                   	// #0
+  402394:	a94153f3 	ldp	x19, x20, [sp, #16]
+  402398:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  40239c:	a94363f7 	ldp	x23, x24, [sp, #48]
+  4023a0:	a9446bf9 	ldp	x25, x26, [sp, #64]
+  4023a4:	a8d17bfd 	ldp	x29, x30, [sp], #272
+  4023a8:	d65f03c0 	ret
+  4023ac:	11000694 	add	w20, w20, #0x1
+  4023b0:	8b13037b 	add	x27, x27, x19
+  4023b4:	97fffa67 	bl	400d50 <memcpy@plt>
+  4023b8:	12001e94 	and	w20, w20, #0xff
+  4023bc:	d2800413 	mov	x19, #0x20                  	// #32
+  4023c0:	eb1b02df 	cmp	x22, x27
+  4023c4:	54fffae8 	b.hi	402320 <kex_hkdf+0xa0>  // b.pmore
+  4023c8:	52800020 	mov	w0, #0x1                   	// #1
+  4023cc:	17ffffc7 	b	4022e8 <kex_hkdf+0x68>
+
+00000000004023d0 <kex_x25519>:
+  4023d0:	a9bc7bfd 	stp	x29, x30, [sp, #-64]!
+  4023d4:	d2800403 	mov	x3, #0x20                  	// #32
+  4023d8:	910003fd 	mov	x29, sp
+  4023dc:	a90153f3 	stp	x19, x20, [sp, #16]
+  4023e0:	aa0103f4 	mov	x20, x1
+  4023e4:	d2800001 	mov	x1, #0x0                   	// #0
+  4023e8:	a9025bf5 	stp	x21, x22, [sp, #32]
+  4023ec:	aa0203f6 	mov	x22, x2
+  4023f0:	aa0003e2 	mov	x2, x0
+  4023f4:	52808140 	mov	w0, #0x40a                 	// #1034
+  4023f8:	97fffa9a 	bl	400e60 <EVP_PKEY_new_raw_private_key@plt>
+  4023fc:	aa1403e2 	mov	x2, x20
+  402400:	aa0003f3 	mov	x19, x0
+  402404:	d2800403 	mov	x3, #0x20                  	// #32
+  402408:	d2800001 	mov	x1, #0x0                   	// #0
+  40240c:	52808140 	mov	w0, #0x40a                 	// #1034
+  402410:	97fffa8c 	bl	400e40 <EVP_PKEY_new_raw_public_key@plt>
+  402414:	f100027f 	cmp	x19, #0x0
+  402418:	aa0003f4 	mov	x20, x0
+  40241c:	fa401804 	ccmp	x0, #0x0, #0x4, ne	// ne = any
+  402420:	540001c1 	b.ne	402458 <kex_x25519+0x88>  // b.any
+  402424:	d2800401 	mov	x1, #0x20                  	// #32
+  402428:	d2800000 	mov	x0, #0x0                   	// #0
+  40242c:	f9001fe1 	str	x1, [sp, #56]
+  402430:	97fffabc 	bl	400f20 <EVP_PKEY_CTX_free@plt>
+  402434:	aa1303e0 	mov	x0, x19
+  402438:	97fffa7a 	bl	400e20 <EVP_PKEY_free@plt>
+  40243c:	aa1403e0 	mov	x0, x20
+  402440:	97fffa78 	bl	400e20 <EVP_PKEY_free@plt>
+  402444:	a94153f3 	ldp	x19, x20, [sp, #16]
+  402448:	52800000 	mov	w0, #0x0                   	// #0
+  40244c:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  402450:	a8c47bfd 	ldp	x29, x30, [sp], #64
+  402454:	d65f03c0 	ret
+  402458:	d2800001 	mov	x1, #0x0                   	// #0
+  40245c:	aa1303e0 	mov	x0, x19
+  402460:	97fffa60 	bl	400de0 <EVP_PKEY_CTX_new@plt>
+  402464:	aa0003f5 	mov	x21, x0
+  402468:	d2800401 	mov	x1, #0x20                  	// #32
+  40246c:	f9001fe1 	str	x1, [sp, #56]
+  402470:	b4fffe00 	cbz	x0, 402430 <kex_x25519+0x60>
+  402474:	97fffabb 	bl	400f60 <EVP_PKEY_derive_init@plt>
+  402478:	7100041f 	cmp	w0, #0x1
+  40247c:	54000060 	b.eq	402488 <kex_x25519+0xb8>  // b.none
+  402480:	aa1503e0 	mov	x0, x21
+  402484:	17ffffeb 	b	402430 <kex_x25519+0x60>
+  402488:	aa1403e1 	mov	x1, x20
+  40248c:	aa1503e0 	mov	x0, x21
+  402490:	97fffa3c 	bl	400d80 <EVP_PKEY_derive_set_peer@plt>
+  402494:	7100041f 	cmp	w0, #0x1
+  402498:	54ffff41 	b.ne	402480 <kex_x25519+0xb0>  // b.any
+  40249c:	aa1603e1 	mov	x1, x22
+  4024a0:	9100e3e2 	add	x2, sp, #0x38
+  4024a4:	aa1503e0 	mov	x0, x21
+  4024a8:	97fffa72 	bl	400e70 <EVP_PKEY_derive@plt>
+  4024ac:	2a0003e1 	mov	w1, w0
+  4024b0:	aa1503e0 	mov	x0, x21
+  4024b4:	2a0103f5 	mov	w21, w1
+  4024b8:	97fffa9a 	bl	400f20 <EVP_PKEY_CTX_free@plt>
+  4024bc:	aa1303e0 	mov	x0, x19
+  4024c0:	97fffa58 	bl	400e20 <EVP_PKEY_free@plt>
+  4024c4:	aa1403e0 	mov	x0, x20
+  4024c8:	97fffa56 	bl	400e20 <EVP_PKEY_free@plt>
+  4024cc:	710006bf 	cmp	w21, #0x1
+  4024d0:	54fffba1 	b.ne	402444 <kex_x25519+0x74>  // b.any
+  4024d4:	f9401fe0 	ldr	x0, [sp, #56]
+  4024d8:	a94153f3 	ldp	x19, x20, [sp, #16]
+  4024dc:	f100801f 	cmp	x0, #0x20
+  4024e0:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  4024e4:	1a9f17e0 	cset	w0, eq	// eq = none
+  4024e8:	a8c47bfd 	ldp	x29, x30, [sp], #64
+  4024ec:	d65f03c0 	ret
+  4024f0:	d503201f 	nop
+  4024f4:	d503201f 	nop
+  4024f8:	d503201f 	nop
+  4024fc:	d503201f 	nop
+
+0000000000402500 <part_desc_for>:
+  402500:	7100041f 	cmp	w0, #0x1
+  402504:	54000160 	b.eq	402530 <part_desc_for+0x30>  // b.none
+  402508:	7100081f 	cmp	w0, #0x2
+  40250c:	54000180 	b.eq	40253c <part_desc_for+0x3c>  // b.none
+  402510:	71000c1f 	cmp	w0, #0x3
+  402514:	540001c0 	b.eq	40254c <part_desc_for+0x4c>  // b.none
+  402518:	90000001 	adrp	x1, 402000 <identity_pubkey+0x20>
+  40251c:	91214021 	add	x1, x1, #0x850
+  402520:	7100101f 	cmp	w0, #0x4
+  402524:	91012020 	add	x0, x1, #0x48
+  402528:	9a9f0000 	csel	x0, x0, xzr, eq	// eq = none
+  40252c:	d65f03c0 	ret
+  402530:	90000000 	adrp	x0, 402000 <identity_pubkey+0x20>
+  402534:	91214000 	add	x0, x0, #0x850
+  402538:	d65f03c0 	ret
+  40253c:	90000000 	adrp	x0, 402000 <identity_pubkey+0x20>
+  402540:	91214000 	add	x0, x0, #0x850
+  402544:	91006000 	add	x0, x0, #0x18
+  402548:	d65f03c0 	ret
+  40254c:	90000000 	adrp	x0, 402000 <identity_pubkey+0x20>
+  402550:	91214000 	add	x0, x0, #0x850
+  402554:	9100c000 	add	x0, x0, #0x30
+  402558:	d65f03c0 	ret
+  40255c:	d503201f 	nop
+
+0000000000402560 <part_identify>:
+  402560:	f100001f 	cmp	x0, #0x0
+  402564:	aa0003e2 	mov	x2, x0
+  402568:	fa431820 	ccmp	x1, #0x3, #0x0, ne	// ne = any
+  40256c:	52800000 	mov	w0, #0x0                   	// #0
+  402570:	54000209 	b.ls	4025b0 <part_identify+0x50>  // b.plast
+  402574:	b9400041 	ldr	w1, [x2]
+  402578:	5280a2a3 	mov	w3, #0x515                 	// #1301
+  40257c:	72bd4003 	movk	w3, #0xea00, lsl #16
+  402580:	52800020 	mov	w0, #0x1                   	// #1
+  402584:	6b03003f 	cmp	w1, w3
+  402588:	54000140 	b.eq	4025b0 <part_identify+0x50>  // b.none
+  40258c:	5146e020 	sub	w0, w1, #0x1b8, lsl #12
+  402590:	79400042 	ldrh	w2, [x2]
+  402594:	71108400 	subs	w0, w0, #0x421
+  402598:	528330a1 	mov	w1, #0x1985                	// #6533
+  40259c:	1a9f17e0 	cset	w0, eq	// eq = none
+  4025a0:	6b01005f 	cmp	w2, w1
+  4025a4:	11000800 	add	w0, w0, #0x2
+  4025a8:	52800083 	mov	w3, #0x4                   	// #4
+  4025ac:	1a831000 	csel	w0, w0, w3, ne	// ne = any
+  4025b0:	d65f03c0 	ret
+  4025b4:	d503201f 	nop
+  4025b8:	d503201f 	nop
+  4025bc:	d503201f 	nop
+
+00000000004025c0 <part_verify_layout>:
+  4025c0:	b2405fe1 	mov	x1, #0xffffff              	// #16777215
+  4025c4:	eb01001f 	cmp	x0, x1
+  4025c8:	1a9f87e0 	cset	w0, ls	// ls = plast
+  4025cc:	531f7800 	lsl	w0, w0, #1
+  4025d0:	d65f03c0 	ret
+  4025d4:	d503201f 	nop
+  4025d8:	d503201f 	nop
+  4025dc:	d503201f 	nop
+
+00000000004025e0 <part_carve>:
+  4025e0:	f100007f 	cmp	x3, #0x0
+  4025e4:	aa0003e5 	mov	x5, x0
+  4025e8:	fa401804 	ccmp	x0, #0x0, #0x4, ne	// ne = any
+  4025ec:	1a9f17e6 	cset	w6, eq	// eq = none
+  4025f0:	7100045f 	cmp	w2, #0x1
+  4025f4:	540001c0 	b.eq	40262c <part_carve+0x4c>  // b.none
+  4025f8:	7100085f 	cmp	w2, #0x2
+  4025fc:	54000480 	b.eq	40268c <part_carve+0xac>  // b.none
+  402600:	71000c5f 	cmp	w2, #0x3
+  402604:	54000480 	b.eq	402694 <part_carve+0xb4>  // b.none
+  402608:	7100105f 	cmp	w2, #0x4
+  40260c:	54000480 	b.eq	40269c <part_carve+0xbc>  // b.none
+  402610:	b2405fe0 	mov	x0, #0xffffff              	// #16777215
+  402614:	eb00003f 	cmp	x1, x0
+  402618:	520000c6 	eor	w6, w6, #0x1
+  40261c:	1a9f87e0 	cset	w0, ls	// ls = plast
+  402620:	0a060000 	and	w0, w0, w6
+  402624:	11000400 	add	w0, w0, #0x1
+  402628:	d65f03c0 	ret
+  40262c:	d2800002 	mov	x2, #0x0                   	// #0
+  402630:	52800020 	mov	w0, #0x1                   	// #1
+  402634:	350002a6 	cbnz	w6, 402688 <part_carve+0xa8>
+  402638:	b2405fe6 	mov	x6, #0xffffff              	// #16777215
+  40263c:	52800040 	mov	w0, #0x2                   	// #2
+  402640:	eb06003f 	cmp	x1, x6
+  402644:	54000309 	b.ls	4026a4 <part_carve+0xc4>  // b.plast
+  402648:	8b020442 	add	x2, x2, x2, lsl #1
+  40264c:	90000001 	adrp	x1, 402000 <identity_pubkey+0x20>
+  402650:	91214021 	add	x1, x1, #0x850
+  402654:	8b020c21 	add	x1, x1, x2, lsl #3
+  402658:	b9400822 	ldr	w2, [x1, #8]
+  40265c:	eb04005f 	cmp	x2, x4
+  402660:	54000148 	b.hi	402688 <part_carve+0xa8>  // b.pmore
+  402664:	a9bf7bfd 	stp	x29, x30, [sp, #-16]!
+  402668:	aa0303e0 	mov	x0, x3
+  40266c:	910003fd 	mov	x29, sp
+  402670:	b9400421 	ldr	w1, [x1, #4]
+  402674:	8b0100a1 	add	x1, x5, x1
+  402678:	97fff9b6 	bl	400d50 <memcpy@plt>
+  40267c:	52800000 	mov	w0, #0x0                   	// #0
+  402680:	a8c17bfd 	ldp	x29, x30, [sp], #16
+  402684:	d65f03c0 	ret
+  402688:	d65f03c0 	ret
+  40268c:	d2800022 	mov	x2, #0x1                   	// #1
+  402690:	17ffffe8 	b	402630 <part_carve+0x50>
+  402694:	d2800042 	mov	x2, #0x2                   	// #2
+  402698:	17ffffe6 	b	402630 <part_carve+0x50>
+  40269c:	d2800062 	mov	x2, #0x3                   	// #3
+  4026a0:	17ffffe4 	b	402630 <part_carve+0x50>
+  4026a4:	d65f03c0 	ret
+  4026a8:	d503201f 	nop
+  4026ac:	d503201f 	nop
+  4026b0:	d503201f 	nop
+  4026b4:	d503201f 	nop
+  4026b8:	d503201f 	nop
+  4026bc:	d503201f 	nop
+
+00000000004026c0 <teled_init>:
+  4026c0:	4f00041f 	movi	v31.4s, #0x0
+  4026c4:	a9bd7bfd 	stp	x29, x30, [sp, #-48]!
+  4026c8:	910003fd 	mov	x29, sp
+  4026cc:	a90153f3 	stp	x19, x20, [sp, #16]
+  4026d0:	d00000f3 	adrp	x19, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  4026d4:	91060273 	add	x19, x19, #0x180
+  4026d8:	f90013f5 	str	x21, [sp, #32]
+  4026dc:	aa0103f4 	mov	x20, x1
+  4026e0:	aa0003f5 	mov	x21, x0
+  4026e4:	ad007e7f 	stp	q31, q31, [x19]
+  4026e8:	ad017e7f 	stp	q31, q31, [x19, #32]
+  4026ec:	f900227f 	str	xzr, [x19, #64]
+  4026f0:	97fff9ac 	bl	400da0 <strlen@plt>
+  4026f4:	d28003e3 	mov	x3, #0x1f                  	// #31
+  4026f8:	eb03001f 	cmp	x0, x3
+  4026fc:	aa0003e2 	mov	x2, x0
+  402700:	aa1503e1 	mov	x1, x21
+  402704:	aa1303e0 	mov	x0, x19
+  402708:	9a839042 	csel	x2, x2, x3, ls	// ls = plast
+  40270c:	97fff991 	bl	400d50 <memcpy@plt>
+  402710:	ad407a9f 	ldp	q31, q30, [x20]
+  402714:	ad017a7f 	stp	q31, q30, [x19, #32]
+  402718:	f94013f5 	ldr	x21, [sp, #32]
+  40271c:	a94153f3 	ldp	x19, x20, [sp, #16]
+  402720:	a8c37bfd 	ldp	x29, x30, [sp], #48
+  402724:	17fffd57 	b	401c80 <collector_init>
+
+0000000000402728 <teled_beacon>:
+  402728:	a9ba7bfd 	stp	x29, x30, [sp, #-96]!
+  40272c:	aa0003e2 	mov	x2, x0
+  402730:	910003fd 	mov	x29, sp
+  402734:	910083e3 	add	x3, sp, #0x20
+  402738:	f9000bf3 	str	x19, [sp, #16]
+  40273c:	d00000f3 	adrp	x19, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  402740:	91060273 	add	x19, x19, #0x180
+  402744:	91008260 	add	x0, x19, #0x20
+  402748:	b9404261 	ldr	w1, [x19, #64]
+  40274c:	11000421 	add	w1, w1, #0x1
+  402750:	b9004261 	str	w1, [x19, #64]
+  402754:	97fffd03 	bl	401b60 <beacon_seal>
+  402758:	12001c01 	and	w1, w0, #0xff
+  40275c:	36000100 	tbz	w0, #0, 40277c <teled_beacon+0x54>
+  402760:	29480e62 	ldp	w2, w3, [x19, #64]
+  402764:	d2800801 	mov	x1, #0x40                  	// #64
+  402768:	910083e0 	add	x0, sp, #0x20
+  40276c:	11000463 	add	w3, w3, #0x1
+  402770:	b9004663 	str	w3, [x19, #68]
+  402774:	97fffd4b 	bl	401ca0 <collector_accept>
+  402778:	12001c01 	and	w1, w0, #0xff
+  40277c:	f9400bf3 	ldr	x19, [sp, #16]
+  402780:	2a0103e0 	mov	w0, w1
+  402784:	a8c67bfd 	ldp	x29, x30, [sp], #96
+  402788:	d65f03c0 	ret
+
+000000000040278c <teled_state>:
+  40278c:	d00000e0 	adrp	x0, 420000 <EVP_DigestSign@OPENSSL_3.0.0>
+  402790:	91060000 	add	x0, x0, #0x180
+  402794:	d65f03c0 	ret
+
+Disassembly of section .fini:
+
+0000000000402798 <_fini>:
+  402798:	d503233f 	paciasp
+  40279c:	a9bf7bfd 	stp	x29, x30, [sp, #-16]!
+  4027a0:	910003fd 	mov	x29, sp
+  4027a4:	a8c17bfd 	ldp	x29, x30, [sp], #16
+  4027a8:	d50323bf 	autiasp
+  4027ac:	d65f03c0 	ret

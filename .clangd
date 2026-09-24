@@ -1,0 +1,12 @@
+# clangd configuration for the TELESCREEN RP5 lab (application-class ARM64).
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+    - --target=aarch64-linux-gnu
+    - -std=c11
+    - -Iinclude
+Diagnostics:
+  UnusedIncludes: None
+  MissingIncludes: None
+  Suppress:
+    - unused-includes
